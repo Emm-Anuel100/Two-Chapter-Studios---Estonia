@@ -1,0 +1,918 @@
+﻿<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// If not using Composer, include PHPMailer manually:
+require 'PHPMailer-master/src/PHPMailer.php';
+require 'PHPMailer-master/src/SMTP.php';
+require 'PHPMailer-master/src/Exception.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'])) {
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+
+    $mail = new PHPMailer(true);
+
+    try {
+        //Server settings
+        $mail->SMTPDebug = 2;  // Set to 0 to disable debug output
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;          // Enable SMTP authentication
+        $mail->Username = 'CHINWEOKWU EMMANUEL'; // SMTP username
+        $mail->Password =  'oofo egot dzhj';  // SMTP password
+      //   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   // Enable TLS encryption, `PHPMailer::ENCRYPTION_SMTPS` for SSL
+      //   $mail->Port = 587;               // TCP port to connect to
+		  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SMTPS (SSL/TLS) for port 465
+		  $mail->Port       = 465; 
+
+        //Recipients
+        $mail->setFrom($email, $name);           // Sender's email and name
+        $mail->addAddress('emmanuelodel75@gmail.com'); // Add a recipient
+
+        // Content
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body  = "
+            <h4>New Message from: $name</h4>
+            <p><strong>Email:</strong> $email</p>
+            <p><strong>Phone:</strong> $phone</p>
+            <p><strong>Message:</strong><br>$message</p>
+        ";
+
+        // Send the email
+        $mail->send();
+
+        // Display SweetAlert success message
+        echo "
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                icon: 'success',
+                title: 'Message Sent!',
+                text: 'Your message has been sent successfully!',
+                confirmButtonText: 'OK'
+            });
+        });
+        </script>";
+    } catch (Exception $e) {
+        // Display SweetAlert error message
+        echo "
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Message could not be sent. Mailer Error: {$mail->ErrorInfo}',
+                confirmButtonText: 'Try Again'
+            });
+        });
+        </script>";
+    }
+}
+?>
+
+
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="shortcut icon" href="../assets/images/logo.png" type="image/png">
+	<title>Contact Us &#8211; Two Chapters Studios OÜ</title>
+
+	<!-- Sweet Alert -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+			<!-- SEO Meta Tags -->
+			<meta name="description" content="Two Chapters Studios OÜ provides high-quality photography, videography, and event coverage services. We capture memorable moments with creativity and precision.">
+			<meta name="keywords" content="Two Chapters Studios, media company, photography, videography, event coverage, video production, professional photography, media services, visual storytelling, best media company in Estonia, media company in Estonia, top media company in Estonia">
+			<meta name="author" content="Two Chapters Studios OÜ">
+			
+			<!-- Open Graph / Social Media Tags -->
+			<meta property="og:title" content="Two Chapters Studios OÜ &#8211; Professional Media Services">
+			<meta property="og:description" content="Explore premium photography, videography, and event coverage services at Two Chapters Studios. We bring your stories to life through our lens.">
+			<meta property="og:image" content="../assets/images/logo.png">
+			<meta property="og:url" content="https://twochapterstudios.com">
+			<meta property="og:type" content="website">
+			
+			<!-- Twitter Cards -->
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:title" content="Two Chapters Studios OÜ &#8211; Professional Media Services">
+			<meta name="twitter:description" content="Discover premium media services including photography, videography, and more. Contact us to make your vision a reality.">
+			<meta name="twitter:image" content="../assets/images/logo.png">
+
+<meta name='robots' content='max-image-preview:large'>
+<!-- <link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Feed" href="../feed/index.php">
+<link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Comments Feed" href="../comments/feed/index.php"> -->
+<!-- <script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/flex.darrelwilson.com\/cinemagic\/lib\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script> -->
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='../themes/7a3fccae50/style.min.css' media='all'>
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='../themes/7a3fccae50/theme.min.css' media='all'>
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='../themes/7a3fccae50/header-footer.min.css' media='all'>
+<link rel='stylesheet' id='elementor-frontend-css' href='../modules/f65f29574d/assets/css/frontend.min.css' media='all'>
+<link rel='stylesheet' id='elementor-post-5-css' href='../storage/sites/77/elementor/css/post-5.css' media='all'>
+<link rel='stylesheet' id='widget-heading-css' href='../modules/f65f29574d/assets/css/widget-heading.min.css' media='all'>
+<link rel='stylesheet' id='widget-image-css' href='../modules/f65f29574d/assets/css/widget-image.min.css' media='all'>
+<link rel='stylesheet' id='widget-nav-menu-css' href='../modules/ccc473c329/assets/css/widget-nav-menu.min.css' media='all'>
+<link rel='stylesheet' id='widget-icon-list-css' href='../modules/f65f29574d/assets/css/widget-icon-list.min.css' media='all'>
+<link rel='stylesheet' id='widget-social-icons-css' href='../modules/f65f29574d/assets/css/widget-social-icons.min.css' media='all'>
+<link rel='stylesheet' id='e-apple-webkit-css' href='../modules/f65f29574d/assets/css/conditionals/apple-webkit.min.css' media='all'>
+<link rel='stylesheet' id='swiper-css' href='../modules/f65f29574d/assets/lib/swiper/v8/css/swiper.min.css' media='all'>
+<link rel='stylesheet' id='e-swiper-css' href='../modules/f65f29574d/assets/css/conditionals/e-swiper.min.css' media='all'>
+<link rel='stylesheet' id='elementor-pro-css' href='../modules/ccc473c329/assets/css/frontend.min.css' media='all'>
+<link rel='stylesheet' id='e-animation-float-css' href='../modules/f65f29574d/assets/lib/animations/styles/e-animation-float.min.css' media='all'>
+<link rel='stylesheet' id='widget-icon-box-css' href='../modules/f65f29574d/assets/css/widget-icon-box.min.css' media='all'>
+<link rel='stylesheet' id='widget-divider-css' href='../modules/f65f29574d/assets/css/widget-divider.min.css' media='all'>
+<link rel='stylesheet' id='widget-text-editor-css' href='../modules/f65f29574d/assets/css/widget-text-editor.min.css' media='all'>
+<link rel='stylesheet' id='widget-forms-css' href='../modules/ccc473c329/assets/css/widget-forms.min.css' media='all'>
+<link rel='stylesheet' id='flatpickr-css' href='../modules/f65f29574d/assets/lib/flatpickr/flatpickr.min.css' media='all'>
+<link rel='stylesheet' id='widget-google_maps-css' href='../modules/f65f29574d/assets/css/widget-google_maps.min.css' media='all'>
+<link rel='stylesheet' id='elementor-post-2175-css' href='../storage/sites/77/elementor/css/post-2175.css' media='all'>
+<link rel='stylesheet' id='elementor-post-33-css' href='../storage/sites/77/elementor/css/post-33.css' media='all'>
+<link rel='stylesheet' id='elementor-post-376-css' href='../storage/sites/77/elementor/css/post-376.css' media='all'>
+<link rel='stylesheet' id='google-fonts-1-css' href='../../css?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CJetBrains+Mono%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap' media='all'>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="../lib/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script src="../lib/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<link rel="canonical" href="index.php">
+<link rel='shortlink' href='index.php?p=2175'>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-20?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2Fcontact%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-21?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2Fcontact%2F&#038;format=xml">
+
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			</head>
+<body class="page-template-default page page-id-2175 wp-custom-logo elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-2175">
+
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<div data-elementor-type="header" data-elementor-id="33" class="elementor elementor-33 elementor-location-header" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-e7c9e67 e-con-full e-flex e-con e-parent" data-id="e7c9e67" data-element_type="container">
+	
+		<div class="elementor-element elementor-element-396bf67 e-con-full e-flex e-con e-child" data-id="396bf67" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;background_motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;background_motion_fx_opacity_effect&quot;:&quot;yes&quot;,&quot;background_motion_fx_opacity_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:1}},&quot;background_motion_fx_range&quot;:&quot;page&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;background_motion_fx_opacity_direction&quot;:&quot;out-in&quot;,&quot;background_motion_fx_opacity_level&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;background_motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+		<div class="elementor-element elementor-element-6af7a71 e-con-full e-flex e-con e-child" data-id="6af7a71" data-element_type="container">
+				<div class="elementor-element elementor-element-3f077ed elementor-widget__width-auto elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="3f077ed" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+									<a href="../index.php">
+			<img width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
+			</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1b8f329 e-con-full e-flex e-con e-child" data-id="1b8f329" data-element_type="container">
+				<div class="elementor-element elementor-element-09a8be5 elementor-nav-menu--stretch elementor-widget__width-auto elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="09a8be5" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;fa-svg-chevron-down e-font-icon-svg e-fas-chevron-down\&quot; viewBox=\&quot;0 0 448 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+						<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-drop-out">
+				<ul id="menu-1-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="../index.php" class="elementor-item">Home</a></li>
+<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14"><a href="#" class="elementor-item elementor-item-anchor">Pages</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="../about/index.php" class="elementor-sub-item">About</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2680"><a href="../our-services/index.php" class="elementor-sub-item">Our Services</a></li>
+</ul>
+</li> -->
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item elementor-item-active">Our Work</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
+   </ul>
+</li>
+<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item">Blog</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
+</ul>
+</li> -->
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2175 current_page_item menu-item-2676"><a href="index.php" aria-current="page" class="elementor-item elementor-item-active">Contact</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			<span class="elementor-screen-only">Menu</span>
+		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="../index.php" class="elementor-item" tabindex="-1">Home</a></li>
+<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Pages</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="../about/index.php" class="elementor-sub-item" tabindex="-1">About</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2680"><a href="../our-services/index.php" class="elementor-sub-item" tabindex="-1">Our Services</a></li>
+</ul>
+</li> -->
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item" tabindex="-1">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item elementor-item-active">Our Work</a>
+	<ul class="sub-menu elementor-nav-menu--dropdown">
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
+	</ul>
+	</li>
+<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item" tabindex="-1">Single Post</a></li>
+</ul>
+</li> -->
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2175 current_page_item menu-item-2676"><a href="index.php" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Contact</a></li>
+</ul>			</nav>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-06d3c62 e-con-full elementor-hidden-mobile elementor-hidden-tablet e-flex e-con e-child" data-id="06d3c62" data-element_type="container">
+				<div class="elementor-element elementor-element-b63c81b elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-mobile elementor-view-default elementor-widget elementor-widget-icon" data-id="b63c81b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjI2NjgiLCJ0b2dnbGUiOmZhbHNlfQ%3D%3D">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewbox="0 0 18 10" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">    <g transform="matrix(1,0,0,1,-130,-106)">        <g>            <path d="M131,107.5L147,107.5C147.276,107.5 147.5,107.276 147.5,107C147.5,106.724 147.276,106.5 147,106.5L131,106.5C130.724,106.5 130.5,106.724 130.5,107C130.5,107.276 130.724,107.5 131,107.5Z"></path>            <path d="M131,115.5L147,115.5C147.276,115.5 147.5,115.276 147.5,115C147.5,114.724 147.276,114.5 147,114.5L131,114.5C130.724,114.5 130.5,114.724 130.5,115C130.5,115.276 130.724,115.5 131,115.5Z"></path>        </g>    </g></svg>			</a>
+		</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				<div data-elementor-type="wp-page" data-elementor-id="2175" class="elementor elementor-2175" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-3b082e4 e-flex e-con-boxed e-con e-parent" data-id="3b082e4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-fa273fc e-flex e-con-boxed e-con e-child" data-id="fa273fc" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-9d1b5eb elementor-widget__width-inherit elementor-widget elementor-widget-template" data-id="9d1b5eb" data-element_type="widget" data-widget_type="template.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-template">
+					<div data-elementor-type="container" data-elementor-id="41" class="elementor elementor-41" data-elementor-post-type="elementor_library">
+				<div class="elementor-element elementor-element-0cefee8 e-flex e-con-boxed e-con e-parent" data-id="0cefee8" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1c9d2d7 elementor-widget elementor-widget-heading" data-id="1c9d2d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Contact Us</h1>		</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d7eb3be e-flex e-con-boxed e-con e-parent" data-id="d7eb3be" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-f4b410e e-flex e-con-boxed e-con e-child" data-id="f4b410e" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-47abd41 e-flex e-con-boxed e-con e-child" data-id="47abd41" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-aad76d1 elementor-widget-mobile__width-inherit elementor-view-stacked elementor-widget-tablet__width-inherit elementor-tablet-position-top elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="aad76d1" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="#" class="elementor-icon elementor-animation-float" tabindex="-1">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h6 class="elementor-icon-box-title">
+						<a href="#">
+							Call us						</a>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3743d5a elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="3743d5a" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+									<a href="#">
+
+									<span class="elementor-icon-list-text">+372 5900 4186</span>
+									</a>
+							</li>
+						</ul>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6df163b e-con-full e-flex e-con e-child" data-id="6df163b" data-element_type="container">
+				<div class="elementor-element elementor-element-06348ab elementor-widget-mobile__width-inherit elementor-view-stacked elementor-widget-tablet__width-inherit elementor-tablet-position-top elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="06348ab" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="#" class="elementor-icon elementor-animation-float" tabindex="-1">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-envelope" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h6 class="elementor-icon-box-title">
+						<a href="#">
+							Email us	</a>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-340894a elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="340894a" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">info@twochapterstudios.com</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-0fc5d0b e-con-full e-flex e-con e-child" data-id="0fc5d0b" data-element_type="container">
+				<div class="elementor-element elementor-element-7b129ba elementor-widget-mobile__width-inherit elementor-view-stacked elementor-widget-tablet__width-inherit elementor-tablet-position-top elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="7b129ba" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="#" class="elementor-icon elementor-animation-float" tabindex="-1">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewbox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h6 class="elementor-icon-box-title">
+						<a href="#">
+							Visit us						</a>
+					</h6>
+				
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6e745d1 elementor-align-center elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="6e745d1" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="#">
+
+											<span class="elementor-icon-list-text">Kuklase 12, Tallinn, Estonia</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-39467ce elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="39467ce" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-fa0ed19 e-flex e-con-boxed e-con e-child" data-id="fa0ed19" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-8904687 elementor-widget elementor-widget-heading" data-id="8904687" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">** Leave your message **</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d9589dc elementor-widget elementor-widget-heading" data-id="d9589dc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Get a Free Consultation!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0b282ef elementor-widget elementor-widget-text-editor" data-id="0b282ef" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Don&#8217;t hesitate to send us your message, our team will assist you.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-f52802e elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-tablet-button-align-stretch elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="f52802e" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;30&quot;,&quot;button_width_tablet&quot;:&quot;40&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+
+					<!-- Form starts here -->
+					<form class="elementor-for" method="post" name="Form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+						<!-- <input type="hidden" name="post_id" value="2175">
+						<input type="hidden" name="form_id" value="f52802e">
+						<input type="hidden" name="referer_title" value="Contact">
+						<input type="hidden" name="queried_id" value="2175"> -->
+				  
+						<div class="elementor-form-fields-wrapper elementor-labels-above">
+							 <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50">
+								  <label for="form-field-name" class="elementor-field-label">Full Name</label>
+								  <input size="1" type="text" name="name" id="form-field-name" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Cahaya Dewi" required="required">
+							 </div>
+				  
+							 <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-50 elementor-field-required elementor-mark-required">
+								  <label for="form-field-email" class="elementor-field-label">Email address</label>
+								  <input size="1" type="email" name="email" id="form-field-email" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="example@mail.com" required="required" aria-required="true">
+							 </div>
+				  
+							 <div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_80737d9 elementor-col-50 elementor-field-required elementor-mark-required">
+								  <label for="form-field-field_80737d9" class="elementor-field-label">Phone number</label>
+								  <input size="1" type="tel" name="phone" id="form-field-field_80737d9" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="+1.555.897.1234" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+							 </div>
+				  
+							 <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_8d06c97 elementor-col-50 elementor-field-required elementor-mark-required">
+								  <label for="form-field-field_8d06c97" class="elementor-field-label">Subject</label>
+								  <input size="1" type="text" name="subject" id="form-field-field_8d06c97" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="How can we help?" required="required" aria-required="true">
+							 </div>
+				  
+							 <div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
+								  <label for="form-field-message" class="elementor-field-label">Your Message</label>
+								  <textarea class="elementor-field-textual elementor-field  elementor-size-md" name="message" id="form-field-message" rows="5" placeholder="Type your message..." required="required"></textarea>
+							 </div>
+				  
+							 <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-30 e-form__buttons elementor-md-40">
+								  <button class="elementor-button elementor-size-md" type="submit">
+										<span class="elementor-button-content-wrapper">
+											 <span class="elementor-button-text">Submit Message</span>
+										</span>
+								  </button>
+							 </div>
+						</div>
+				  </form>
+             <!--/ Form ends here -->				  
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fe4dbbc e-flex e-con-boxed e-con e-parent" data-id="fe4dbbc" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-df64873 e-flex e-con-boxed e-con e-child" data-id="df64873" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e55f253 elementor-widget elementor-widget-google_maps" data-id="e55f253" data-element_type="widget" data-widget_type="google_maps.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-custom-embed">
+					 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227338.40575225712!2d24.572717259668718!3d59.419611095315965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46929499df5616bf%3A0x400b36d18fc6270!2sTallinn%2C%20Estonia!5e1!3m2!1sen!2sng!4v1727528125436!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ebf457e e-flex e-con-boxed e-con e-parent" data-id="ebf457e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-c877784 e-con-full e-flex e-con e-child" data-id="c877784" data-element_type="container">
+				<div class="elementor-element elementor-element-737f82a elementor-widget elementor-widget-heading" data-id="737f82a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Faqs</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-40e7281 elementor-widget elementor-widget-heading" data-id="40e7281" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Frequently asked questions</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d339c34 elementor-widget elementor-widget-text-editor" data-id="d339c34" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>_____</p>						</div>
+				</div>
+
+				<!-- First image aside in FAQ -->
+				<div class="elementor-element elementor-element-7a81c99 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="7a81c99" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+						<img fetchpriority="high" decoding="async" width="1920" height="1280" src="../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg" class="attachment-full size-full wp-image-1947" alt="" srcset="../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1920w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 300w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1024w, ../storage/sites/77/2024/02/rear-view-of-videographer-and-his-assistant-adjust-2023-11-27-05-14-25-utc-768x512.jpg 768w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">													</div>
+				</div>
+				<!--/ First image aside in FAQ -->
+
+				<!--/ Second image aside in FAQ -->
+				<div class="elementor-element elementor-element-7a81c99 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="7a81c99" data-element_type="widget" data-widget_type="image.default">
+					<div class="elementor-widget-container">
+							<img fetchpriority="high" decoding="async" width="1920" height="1280" src="../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg" class="attachment-full size-full wp-image-1947" alt="" srcset="../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1920w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 300w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1024w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 768w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">													</div>
+					</div>
+					<!--/ Second image aside in FAQ -->
+				</div>
+
+		<div class="elementor-element elementor-element-e8835be e-con-full e-flex e-con e-child" data-id="e8835be" data-element_type="container">
+				<div class="elementor-element elementor-element-84ede74 elementor-widget elementor-widget-heading" data-id="84ede74" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">What video production services do you offer at Two Chapters Studios?</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ee7cf90 elementor-widget elementor-widget-text-editor" data-id="ee7cf90" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>We specialize in a wide range of video production services, including corporate videos, promotional videos, music videos, event coverage, and more. Whether you're a business or an individual, we tailor our services to meet your specific needs, from concept to post-production.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-33baf4f elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="33baf4f" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1beb1ce elementor-widget elementor-widget-heading" data-id="1beb1ce" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">What types of photography services do you provide?</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e43d322 elementor-widget elementor-widget-text-editor" data-id="e43d322" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Our photography services include professional headshots, portraits, event photography, product photography, and lifestyle shoots. We work with businesses for commercial needs and individuals for special occasions. No matter the project, we aim to capture images that tell a story.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-a3e1d30 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="a3e1d30" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4ba4e96 elementor-widget elementor-widget-heading" data-id="4ba4e96" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h6 class="elementor-heading-title elementor-size-default">How can I book a session with Two Chapters Studios?</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-79daa1a elementor-widget elementor-widget-text-editor" data-id="79daa1a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Booking a session is easy! You can reach out to us through our contact page to book a consultation, request a quote, or schedule a shoot. We’ll discuss your needs, timing, and vision to ensure we deliver exactly what you’re looking for.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-9b7c04a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9b7c04a" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			        <span class="elementor-divider-separator">
+						</span>
+	          	</div>
+				</div>
+				</div>
+
+				<div class="elementor-element elementor-element-dcbbe9d elementor-widget elementor-widget-heading" data-id="dcbbe9d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			     <h6 class="elementor-heading-title elementor-size-default">What is your typical turnaround time for delivering photos or videos?</h6>		</div>
+				</div>
+				<div class="elementor-element elementor-element-16ec0f6 elementor-widget elementor-widget-text-editor" data-id="16ec0f6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Turnaround times vary depending on the scope of the project. For most photography sessions, you can expect to receive your images within 1-2 weeks. For video production, delivery typically takes between 2-4 weeks depending on the complexity of editing and revisions.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-9b7c04a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9b7c04a" data-element_type="widget" data-widget_type="divider.default">
+					<div class="elementor-widget-container">
+						<div class="elementor-divider">
+						  <span class="elementor-divider-separator">
+							</span>
+						 </div>
+					</div>
+					</div>
+
+				<div class="elementor-element elementor-element-dcbbe9d elementor-widget elementor-widget-heading" data-id="dcbbe9d" data-element_type="widget" data-widget_type="heading.default">
+					<div class="elementor-widget-container">
+					  <h6 class="elementor-heading-title elementor-size-default">Can you shoot both photography and video for the same event?</h6>		</div>
+					</div>
+					<div class="elementor-element elementor-element-16ec0f6 elementor-widget elementor-widget-text-editor" data-id="16ec0f6" data-element_type="widget" data-widget_type="text-editor.default">
+					<div class="elementor-widget-container">
+								<p>Absolutely! We can cover both photography and video for your event, ensuring that no special moment is missed. Let us know during the consultation if you’d like to combine these services, and we’ll customize a package to suit your needs.</p>						</div>
+					</div>
+					<div class="elementor-element elementor-element-9b7c04a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9b7c04a" data-element_type="widget" data-widget_type="divider.default">
+						<div class="elementor-widget-container">
+							<div class="elementor-divider">
+							  <span class="elementor-divider-separator">
+								</span>
+							 </div>
+						</div>
+						</div>
+
+					<div class="elementor-element elementor-element-dcbbe9d elementor-widget elementor-widget-heading" data-id="dcbbe9d" data-element_type="widget" data-widget_type="heading.default">
+						<div class="elementor-widget-container">
+						  <h6 class="elementor-heading-title elementor-size-default">Do you offer services outside of Tallinn?</h6>		</div>
+						</div>
+						<div class="elementor-element elementor-element-16ec0f6 elementor-widget elementor-widget-text-editor" data-id="16ec0f6" data-element_type="widget" data-widget_type="text-editor.default">
+						<div class="elementor-widget-container">
+									<p>We are based in Tallinn, Estonia, but we also offer our video production and photography services across Estonia and internationally. Whether you need us locally or for a destination project, we’re ready to travel!</p>						</div>
+						</div>
+						<div class="elementor-element elementor-element-9b7c04a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="9b7c04a" data-element_type="widget" data-widget_type="divider.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-divider">
+								  <span class="elementor-divider-separator">
+									</span>
+								 </div>
+							</div>
+							</div>
+
+						<div class="elementor-element elementor-element-dcbbe9d elementor-widget elementor-widget-heading" data-id="dcbbe9d" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+							  <h6 class="elementor-heading-title elementor-size-default">What should I expect during a video or photo shoot?</h6>		</div>
+							</div>
+							<div class="elementor-element elementor-element-16ec0f6 elementor-widget elementor-widget-text-editor" data-id="16ec0f6" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+										<p>During your session, we work closely with you to ensure you feel comfortable and confident. We’ll discuss your vision in detail beforehand, so on the day of the shoot, you can relax and enjoy the creative process while we handle the technical aspects</p>						</div>
+							</div>
+				       </div>
+					</div>
+				</div>
+				</div>
+
+				<div data-elementor-type="footer" data-elementor-id="376" class="elementor elementor-376 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-a68a295 e-flex e-con-boxed e-con e-parent" data-id="a68a295" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-271fbcb e-con-full e-flex e-con e-child" data-id="271fbcb" data-element_type="container">
+		<div class="elementor-element elementor-element-16dcaf6 e-con-full e-flex e-con e-child" data-id="16dcaf6" data-element_type="container">
+				<div class="elementor-element elementor-element-07a9578 elementor-widget elementor-widget-image" data-id="07a9578" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+														<a href="../index.php">
+							<img width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px">								</a>
+							</div>
+				</div>
+				<div class="elementor-element elementor-element-44c8474 elementor-widget elementor-widget-heading" data-id="44c8474" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">&copy;
+				<script>
+					document.write(new Date().getFullYear());
+				 </script>
+				  Two Chapters Studios. All rights reserved.</h2>		</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e7bdcb8 e-flex e-con-boxed e-con e-child" data-id="e7bdcb8" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-accb70a elementor-widget elementor-widget-heading" data-id="accb70a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Kuklase 12, Tallinn, Estonia</span>		</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-10ba332 e-con-full e-flex e-con e-child" data-id="10ba332" data-element_type="container">
+				<div class="elementor-element elementor-element-59ff519 elementor-icon-list--layout-inline elementor-align-center elementor-widget__width-auto elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="59ff519" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="../index.php">
+
+											<span class="elementor-icon-list-text">Home</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="../about/index.php">
+
+											<span class="elementor-icon-list-text">About</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="../our-work/index.php">
+
+											<span class="elementor-icon-list-text">Our work</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="../contact/index.php">
+
+											<span class="elementor-icon-list-text">Contact</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3fab293 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="3fab293" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-b2ac4d5" href="#" target="_blank">
+						<span class="elementor-screen-only">Facebook</span>
+						<svg class="e-font-icon-svg e-fab-facebook" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-532d8db" href="#" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d08cb86" href="#" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<svg class="e-font-icon-svg e-fab-youtube" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+		<div data-elementor-type="popup" data-elementor-id="2668" class="elementor elementor-2668 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;slideInRight&quot;,&quot;exit_animation&quot;:&quot;slideInRight&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.80000000000000004,&quot;sizes&quot;:[]},&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-6f0e8242 e-flex e-con-boxed e-con e-parent" data-id="6f0e8242" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4e40319e e-flex e-con-boxed e-con e-child" data-id="4e40319e" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2f864cc2 elementor-widget elementor-widget-image" data-id="2f864cc2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img width="413" height="91" src="../assets/images/logo-white.png" class="attachment-large size-large wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">													</div>
+				</div>
+				<div class="elementor-element elementor-element-2f3a7809 elementor-widget elementor-widget-text-editor" data-id="2f3a7809" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Crafting Your Imagination into Visual Stories, One Frame at a Time. </p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-43dc9fc4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="43dc9fc4" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">@Two Chapters Studios.</span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4a586cb2 elementor-widget elementor-widget-gallery" data-id="4a586cb2" data-element_type="widget" data-settings="{&quot;columns&quot;:3,&quot;columns_mobile&quot;:3,&quot;aspect_ratio&quot;:&quot;1:1&quot;,&quot;gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:16,&quot;sizes&quot;:[]},&quot;gallery_layout&quot;:&quot;grid&quot;,&quot;columns_tablet&quot;:2,&quot;gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;link_to&quot;:&quot;file&quot;,&quot;overlay_background&quot;:&quot;yes&quot;,&quot;content_hover_animation&quot;:&quot;fade-in&quot;}" data-widget_type="gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-gallery__container">
+							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="../storage/sites/77/2024/02/side-view-of-bearded-cameraman-in-casualwear-stand-2023-11-27-05-34-28-utc.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="4a586cb2" data-elementor-lightbox-title="side-view-of-bearded-cameraman-in-casualwear-stand-2023-11-27-05-34-28-utc" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjE3MSwidXJsIjoiaHR0cHM6XC9cL2ZsZXguZGFycmVsd2lsc29uLmNvbVwvY2luZW1hZ2ljXC93cC1jb250ZW50XC91cGxvYWRzXC9zaXRlc1wvNzdcLzIwMjRcLzAyXC9zaWRlLXZpZXctb2YtYmVhcmRlZC1jYW1lcmFtYW4taW4tY2FzdWFsd2Vhci1zdGFuZC0yMDIzLTExLTI3LTA1LTM0LTI4LXV0Yy5qcGciLCJzbGlkZXNob3ciOiI0YTU4NmNiMiJ9">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../storage/sites/77/2024/02/side-view-of-bearded-cameraman-in-casualwear-stand-2023-11-27-05-34-28-utc-300x167.jpg" data-width="300" data-height="167" aria-label="" role="img"></div>
+											<div class="elementor-gallery-item__overlay"></div>
+														</a>
+							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="../storage/sites/77/2024/02/production-team-shooting-some-video-movie-2023-11-27-05-01-16-utc.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="4a586cb2" data-elementor-lightbox-title="production-team-shooting-some-video-movie-2023-11-27-05-01-16-utc" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjE3MCwidXJsIjoiaHR0cHM6XC9cL2ZsZXguZGFycmVsd2lsc29uLmNvbVwvY2luZW1hZ2ljXC93cC1jb250ZW50XC91cGxvYWRzXC9zaXRlc1wvNzdcLzIwMjRcLzAyXC9wcm9kdWN0aW9uLXRlYW0tc2hvb3Rpbmctc29tZS12aWRlby1tb3ZpZS0yMDIzLTExLTI3LTA1LTAxLTE2LXV0Yy5qcGciLCJzbGlkZXNob3ciOiI0YTU4NmNiMiJ9">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../storage/sites/77/2024/02/production-team-shooting-some-video-movie-2023-11-27-05-01-16-utc-300x152.jpg" data-width="300" data-height="152" aria-label="" role="img"></div>
+											<div class="elementor-gallery-item__overlay"></div>
+														</a>
+							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="../storage/sites/77/2024/02/cameraman-with-big-cinema-camera-2023-11-27-05-10-58-utc.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="4a586cb2" data-elementor-lightbox-title="cameraman-with-big-cinema-camera-2023-11-27-05-10-58-utc" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MjE2OSwidXJsIjoiaHR0cHM6XC9cL2ZsZXguZGFycmVsd2lsc29uLmNvbVwvY2luZW1hZ2ljXC93cC1jb250ZW50XC91cGxvYWRzXC9zaXRlc1wvNzdcLzIwMjRcLzAyXC9jYW1lcmFtYW4td2l0aC1iaWctY2luZW1hLWNhbWVyYS0yMDIzLTExLTI3LTA1LTEwLTU4LXV0Yy5qcGciLCJzbGlkZXNob3ciOiI0YTU4NmNiMiJ9">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../storage/sites/77/2024/02/cameraman-with-big-cinema-camera-2023-11-27-05-10-58-utc-300x162.jpg" data-width="300" data-height="162" aria-label="" role="img"></div>
+											<div class="elementor-gallery-item__overlay"></div>
+														</a>
+							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="../storage/sites/77/2024/02/rear-view-of-videographer-and-his-assistant-adjust-2023-11-27-05-14-25-utc.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="4a586cb2" data-elementor-lightbox-title="rear-view-of-videographer-and-his-assistant-adjust-2023-11-27-05-14-25-utc" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTk0NywidXJsIjoiaHR0cHM6XC9cL2ZsZXguZGFycmVsd2lsc29uLmNvbVwvY2luZW1hZ2ljXC93cC1jb250ZW50XC91cGxvYWRzXC9zaXRlc1wvNzdcLzIwMjRcLzAyXC9yZWFyLXZpZXctb2YtdmlkZW9ncmFwaGVyLWFuZC1oaXMtYXNzaXN0YW50LWFkanVzdC0yMDIzLTExLTI3LTA1LTE0LTI1LXV0Yy5qcGciLCJzbGlkZXNob3ciOiI0YTU4NmNiMiJ9">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../storage/sites/77/2024/02/rear-view-of-videographer-and-his-assistant-adjust-2023-11-27-05-14-25-utc-300x200.jpg" data-width="300" data-height="200" aria-label="" role="img"></div>
+											<div class="elementor-gallery-item__overlay"></div>
+														</a>
+							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="../storage/sites/77/2024/02/woman-holding-a-movie-production-clapperboard-2023-11-27-05-30-40-utc.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="4a586cb2" data-elementor-lightbox-title="woman-holding-a-movie-production-clapperboard-2023-11-27-05-30-40-utc" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTc2OCwidXJsIjoiaHR0cHM6XC9cL2ZsZXguZGFycmVsd2lsc29uLmNvbVwvY2luZW1hZ2ljXC93cC1jb250ZW50XC91cGxvYWRzXC9zaXRlc1wvNzdcLzIwMjRcLzAyXC93b21hbi1ob2xkaW5nLWEtbW92aWUtcHJvZHVjdGlvbi1jbGFwcGVyYm9hcmQtMjAyMy0xMS0yNy0wNS0zMC00MC11dGMuanBnIiwic2xpZGVzaG93IjoiNGE1ODZjYjIifQ%3D%3D">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../storage/sites/77/2024/02/woman-holding-a-movie-production-clapperboard-2023-11-27-05-30-40-utc-300x200.jpg" data-width="300" data-height="200" aria-label="" role="img"></div>
+											<div class="elementor-gallery-item__overlay"></div>
+														</a>
+							<a class="e-gallery-item elementor-gallery-item elementor-animated-content" href="../storage/sites/77/2024/02/young-cameraman-or-videographer-adjusting-focus-of-2023-11-27-04-51-43-utc.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="4a586cb2" data-elementor-lightbox-title="young-cameraman-or-videographer-adjusting-focus-of-2023-11-27-04-51-43-utc" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6OTM3LCJ1cmwiOiJodHRwczpcL1wvZmxleC5kYXJyZWx3aWxzb24uY29tXC9jaW5lbWFnaWNcL3dwLWNvbnRlbnRcL3VwbG9hZHNcL3NpdGVzXC83N1wvMjAyNFwvMDJcL3lvdW5nLWNhbWVyYW1hbi1vci12aWRlb2dyYXBoZXItYWRqdXN0aW5nLWZvY3VzLW9mLTIwMjMtMTEtMjctMDQtNTEtNDMtdXRjLmpwZyIsInNsaWRlc2hvdyI6IjRhNTg2Y2IyIn0%3D">
+					<div class="e-gallery-image elementor-gallery-item__image" data-thumbnail="../storage/sites/77/2024/02/young-cameraman-or-videographer-adjusting-focus-of-2023-11-27-04-51-43-utc-300x136.jpg" data-width="300" data-height="136" aria-label="" role="img"></div>
+											<div class="elementor-gallery-item__overlay"></div>
+														</a>
+					</div>
+			</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-9f9ff30 e-flex e-con-boxed e-con e-child" data-id="9f9ff30" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2ac3dc43 elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2ac3dc43" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="#">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-pin" viewbox="0 0 288 512" xmlns="http://www.w3.org/2000/svg"><path d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Direction</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item elementor-inline-item">
+											<a href="./index.php">
+
+												<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-comments" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Contact Us</span>
+											</a>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-37a4a438 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="37a4a438" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-35fc26c3 elementor-shape-rounded elementor-grid-0 e-grid-align-center elementor-widget elementor-widget-social-icons" data-id="35fc26c3" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-grow elementor-repeater-item-d497524" target="_blank">
+						<span class="elementor-screen-only">Facebook-f</span>
+						<svg class="e-font-icon-svg e-fab-facebook-f" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-grow elementor-repeater-item-c5bc324" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-grow elementor-repeater-item-c837a4b" target="_blank">
+						<span class="elementor-screen-only">Instagram</span>
+						<svg class="e-font-icon-svg e-fab-instagram" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-grow elementor-repeater-item-dcedee2" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<svg class="e-font-icon-svg e-fab-youtube" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>					</a>
+				</span>
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					<script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='elementor-post-41-css' href='../storage/sites/77/elementor/css/post-41.css' media='all'>
+<link rel='stylesheet' id='elementor-post-2668-css' href='../storage/sites/77/elementor/css/post-2668.css' media='all'>
+<link rel='stylesheet' id='widget-gallery-css' href='../modules/ccc473c329/assets/css/widget-gallery.min.css' media='all'>
+<link rel='stylesheet' id='elementor-gallery-css' href='../modules/f65f29574d/assets/lib/e-gallery/css/e-gallery.min.css' media='all'>
+<link rel='stylesheet' id='e-animation-grow-css' href='../modules/f65f29574d/assets/lib/animations/styles/e-animation-grow.min.css' media='all'>
+<link rel='stylesheet' id='e-animation-slideInRight-css' href='../modules/f65f29574d/assets/lib/animations/styles/slideInRight.min.css' media='all'>
+<script src="../themes/7a3fccae50/assets/js/hello-frontend.min.js" id="hello-theme-frontend-js"></script>
+<script src="../modules/ccc473c329/assets/lib/smartmenus/jquery.smartmenus.min.js" id="smartmenus-js"></script>
+<script src="../modules/ccc473c329/assets/lib/sticky/jquery.sticky.min.js" id="e-sticky-js"></script>
+<script src="../modules/f65f29574d/assets/lib/e-gallery/js/e-gallery.min.js" id="elementor-gallery-js"></script>
+<script src="../modules/ccc473c329/assets/js/webpack-pro.runtime.min.js" id="elementor-pro-webpack-runtime-js"></script>
+<script src="../modules/f65f29574d/assets/js/webpack.runtime.min.js" id="elementor-webpack-runtime-js"></script>
+<script src="../modules/f65f29574d/assets/js/frontend-modules.min.js" id="elementor-frontend-modules-js"></script>
+<script src="../lib/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+<script src="../lib/js/dist/i18n.min.js" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/flex.darrelwilson.com\/cinemagic\/ajax-call","nonce":"cc538596ce","urls":{"assets":"https:\/\/flex.darrelwilson.com\/cinemagic\/modules\/ccc473c329\/assets\/","rest":"https:\/\/flex.darrelwilson.com\/cinemagic\/wp-json\/"},"settings":{"lazy_load_background_images":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/flex.darrelwilson.com\/cinemagic\/modules\/ccc473c329\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="../modules/ccc473c329/assets/js/frontend.min.js" id="elementor-pro-frontend-js"></script>
+<script src="../lib/js/jquery/ui/core.min.js" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.24.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"link-in-bio":true,"floating-buttons":true,"display-conditions":true,"form-submissions":true},"urls":{"assets":"https:\/\/flex.darrelwilson.com\/cinemagic\/modules\/f65f29574d\/assets\/","ajaxurl":"https:\/\/flex.darrelwilson.com\/cinemagic\/ajax-call"},"nonces":{"floatingButtonsClickTracking":"205f0bfe19"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","viewport_mobile":767,"viewport_tablet":1024,"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":2175,"title":"Contact%20%E2%80%93%20Cinemagic","excerpt":"","featuredImage":false}};
+</script>
+<script src="../modules/f65f29574d/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
+<script src="../modules/ccc473c329/assets/js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
+
+</body>
+</html>

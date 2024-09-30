@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /lib/
+Disallow: /modules/
+Disallow: /wp-json/
+
+# Allow access to important directories
+Allow: /wp-content/uploads/
+Allow: /themes/
+Allow: /about/
+Allow: /assets/
+Allow: /blog/
+Allow: /our-services/
+Allow: /our-work/
+Allow: /storage/
+Allow: /storage/
+Allow: /contact/
+
+# Sitemap directive to help bots find sitemap
+Sitemap: https://twochapterstudios.com/sitemap.xml
