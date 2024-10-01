@@ -143,7 +143,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 								<div class="elementor-widget-container">
 							<style>/*! elementor - v3.18.0 - 20-12-2023 */
 				.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>								<a href="../index.php">
-							<img width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="logo" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
+							<img loading="lazy" width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="logo" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
 															</div>
 								</div>
 								</div>
@@ -159,12 +159,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</ul>
 				</li> -->
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item">About</a></li>
-				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../our-work/index.php" class="elementor-item">Our Work</a></li>
-				<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item">Blog</a>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="javascript:void();" class="elementor-item">Our Work</a>
 				<ul class="sub-menu elementor-nav-menu--dropdown">
-					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/" class="elementor-sub-item">Photography</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
 				</ul>
-				</li> -->
+				</li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="../blog/index.php" class="elementor-item">Blog</a></li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="../contact/index.php" class="elementor-item">Contact</a></li>
 				</ul>			</nav>
@@ -180,7 +180,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-993 current_page_item menu-item-2680"><a href="index.php" aria-current="page" class="elementor-sub-item elementor-item-active" tabindex="-1">Our Services</a></li>
 				</ul>
 				</li> -->
-				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../our-work/index.php" class="elementor-item" tabindex="-1">Our Work</a></li>
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="javascript:void();" class="elementor-item">Our Work</a>
+				<ul class="sub-menu elementor-nav-menu--dropdown">
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/" class="elementor-sub-item">Photography</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
+				</ul>
+				</li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../blog/index.php" class="elementor-sub-item" tabindex="-1">Blog</a></li>
 				<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a>
 				<ul class="sub-menu elementor-nav-menu--dropdown">
@@ -264,7 +269,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 										Corporate Video Production					</span>
 								</h3>
 													<p class="elementor-icon-box-description">
-										Morbi id magna id orci placerat mollis eu sit amet sapien. Morbi justo urna					</p>
+													Creating professional videos tailored for businesses, focusing on communicating brand messages.				</p>
 											</div>
 						</div>
 								</div>
@@ -297,7 +302,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 										Event Coverage & Highlights					</span>
 								</h3>
 													<p class="elementor-icon-box-description">
-										Suspendisse laoreet neque velit, quis tempus magna semper quis. Quisque non lacus					</p>
+													Capturing key moments of events through comprehensive filming.		</p>
 											</div>
 						</div>
 								</div>
@@ -330,7 +335,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 										Product & Service Demos					</span>
 								</h3>
 													<p class="elementor-icon-box-description">
-										Aliquam erat volutpat. Nam aliquam tincidunt tincidunt. Quisque condimentum					</p>
+													Showcasing features and benefits through detailed visual presentations.</p>
 											</div>
 						</div>
 								</div>
@@ -363,7 +368,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 										Exhibition & Booth Coverage					</span>
 								</h3>
 													<p class="elementor-icon-box-description">
-										Mauris ut augue vitae arcu feugiat rhoncus. Vivamus velit tortor, vulputate volutpat					</p>
+													Documenting the displays, and key highlights of your booth at trade shows or exhibitions.				</p>
 											</div>
 						</div>
 								</div>
@@ -577,7 +582,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 								<div class="elementor-element elementor-element-07a9578 elementor-widget elementor-widget-image" data-id="07a9578" data-element_type="widget" data-widget_type="image.default">
 								<div class="elementor-widget-container">
 																				<a href="../index.php">
-											<img width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px">								</a>
+											<img loading="lazy" width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px">								</a>
 																			</div>
 								</div>
 								<div class="elementor-element elementor-element-44c8474 elementor-widget elementor-widget-heading" data-id="44c8474" data-element_type="widget" data-widget_type="heading.default">
@@ -593,7 +598,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 									<div class="e-con-inner">
 								<div class="elementor-element elementor-element-accb70a elementor-widget elementor-widget-heading" data-id="accb70a" data-element_type="widget" data-widget_type="heading.default">
 								<div class="elementor-widget-container">
-							<span class="elementor-heading-title elementor-size-default">Kuklase 12, Tallinn, Estonia</span>		</div>
+							<span class="elementor-heading-title elementor-size-default">Tallinn, Estonia</span>		</div>
 								</div>
 									</div>
 								</div>
@@ -641,7 +646,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 											<span class="elementor-grid-item">
 									<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-532d8db" href="#" target="_blank">
 										<span class="elementor-screen-only">Twitter</span>
-										<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+										<svg version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg" style="font-size: 25px"
+							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1668.56 1221.19"
+							style="enable-background:new 0 0 1668.56 1221.19;" xml:space="preserve">
+						<style type="text/css">
+							.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
+							.st1{fill:#FFFFFF;}
+						</style>
+						<g>
+							<circle class="st0" cx="834.28" cy="610.6" r="481.33"/>
+							<g id="layer1" transform="translate(52.390088,-25.058597)">
+								<path id="path1009" class="st1" d="M485.39,356.79l230.07,307.62L483.94,914.52h52.11l202.7-218.98l163.77,218.98h177.32
+									L836.82,589.6l215.5-232.81h-52.11L813.54,558.46L662.71,356.79H485.39z M562.02,395.17h81.46l359.72,480.97h-81.46L562.02,395.17
+									z"/>
+							</g>
+						</g>
+						</svg>					</a>
 								</span>
 											<span class="elementor-grid-item">
 									<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d08cb86" href="#" target="_blank">
@@ -663,11 +683,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 									<div class="e-con-inner">
 								<div class="elementor-element elementor-element-2f864cc2 elementor-widget elementor-widget-image" data-id="2f864cc2" data-element_type="widget" data-widget_type="image.default">
 								<div class="elementor-widget-container">
-																			<img width="413" height="91" src="../assets/images/logo-white.png" class="attachment-large size-large wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">															</div>
+																			<img loading="lazy" width="413" height="91" src="../assets/images/logo-white.png" class="attachment-large size-large wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">															</div>
 								</div>
 								<div class="elementor-element elementor-element-2f3a7809 elementor-widget elementor-widget-text-editor" data-id="2f3a7809" data-element_type="widget" data-widget_type="text-editor.default">
 								<div class="elementor-widget-container">
-											<p>Nullam quis risus eget urna mollis ornare vel eu leo. Aenean lacinia bibendum nulla </p>						</div>
+											<p>Crafting Your Imagination into Visual Stories, One Frame at a Time.</p>						</div>
 								</div>
 								<div class="elementor-element elementor-element-43dc9fc4 elementor-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="43dc9fc4" data-element_type="widget" data-widget_type="icon-list.default">
 								<div class="elementor-widget-container">
@@ -719,7 +739,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 								<div class="elementor-widget-container">
 									<ul class="elementor-icon-list-items elementor-inline-items">
 											<li class="elementor-icon-list-item elementor-inline-item">
-															<a href="#">
+															<a href="javascript:void();">
 				
 																<span class="elementor-icon-list-icon">
 											<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-pin" viewbox="0 0 288 512" xmlns="http://www.w3.org/2000/svg"><path d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"></path></svg>						</span>
@@ -727,7 +747,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 															</a>
 													</li>
 												<li class="elementor-icon-list-item elementor-inline-item">
-															<a href="#">
+															<a href="../contact/">
 				
 																<span class="elementor-icon-list-icon">
 											<svg aria-hidden="true" class="e-font-icon-svg e-fas-comments" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path></svg>						</span>

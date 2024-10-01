@@ -23,10 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'])) {
         //Server settings
         $mail->SMTPDebug = 2;  // Set to 0 to disable debug output
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+        $mail->Host = 'mail.analytixboost.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;          // Enable SMTP authentication
-        $mail->Username = 'CHINWEOKWU EMMANUEL'; // SMTP username
-        $mail->Password =  'oofo egot dzhj';  // SMTP password
+        $mail->Username = 'mail@analytixboost.com'; // SMTP username
+        $mail->Password =  'Emmanuel2003@';  // SMTP password
       //   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   // Enable TLS encryption, `PHPMailer::ENCRYPTION_SMTPS` for SSL
       //   $mail->Port = 587;               // TCP port to connect to
 		  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SMTPS (SSL/TLS) for port 465
@@ -207,7 +207,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-element elementor-element-3f077ed elementor-widget__width-auto elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="3f077ed" data-element_type="widget" data-widget_type="theme-site-logo.default">
 				<div class="elementor-widget-container">
 									<a href="../index.php">
-			<img width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
+			<img loading="lazy" width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
 			</div>
 				</div>
 				</div>
@@ -223,7 +223,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </ul>
 </li> -->
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item">About Us</a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item elementor-item-active">Our Work</a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item">Our Work</a>
 	<ul class="sub-menu elementor-nav-menu--dropdown">
 		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
 		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
@@ -411,7 +411,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<li class="elementor-icon-list-item">
 											<a href="#">
 
-											<span class="elementor-icon-list-text">Kuklase 12, Tallinn, Estonia</span>
+											<span class="elementor-icon-list-text">Tallinn, Estonia</span>
 											</a>
 									</li>
 						</ul>
@@ -446,14 +446,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 
 					<!-- Form starts here -->
-					<form class="elementor-for" method="post" name="Form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+					<form class="elementor-for" method="POST" name="Form" action="mailto:chinweokwuemmanuel2004@gmail.com" enctype="text/plain">
 						<!-- <input type="hidden" name="post_id" value="2175">
 						<input type="hidden" name="form_id" value="f52802e">
 						<input type="hidden" name="referer_title" value="Contact">
 						<input type="hidden" name="queried_id" value="2175"> -->
 				  
 						<div class="elementor-form-fields-wrapper elementor-labels-above">
-							 <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50">
+							 <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-50 elementor-mark-required">
 								  <label for="form-field-name" class="elementor-field-label">Full Name</label>
 								  <input size="1" type="text" name="name" id="form-field-name" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Cahaya Dewi" required="required">
 							 </div>
@@ -465,15 +465,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				  
 							 <div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_80737d9 elementor-col-50 elementor-field-required elementor-mark-required">
 								  <label for="form-field-field_80737d9" class="elementor-field-label">Phone number</label>
-								  <input size="1" type="tel" name="phone" id="form-field-field_80737d9" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="+1.555.897.1234" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+								  <input size="1" type="tel" name="phone" id="form-field-field_80737d9" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="+155 5897 1234" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
 							 </div>
 				  
 							 <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_8d06c97 elementor-col-50 elementor-field-required elementor-mark-required">
 								  <label for="form-field-field_8d06c97" class="elementor-field-label">Subject</label>
-								  <input size="1" type="text" name="subject" id="form-field-field_8d06c97" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="How can we help?" required="required" aria-required="true">
+								  <input size="1" type="text" name="subject" id="form-field-field_8d06c97" class="elementor-field elementor-size-md  elementor-field-textual" placeholder="Subject" required="required" aria-required="true">
 							 </div>
 				  
-							 <div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100">
+							 <div class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-message elementor-col-100 elementor-mark-required">
 								  <label for="form-field-message" class="elementor-field-label">Your Message</label>
 								  <textarea class="elementor-field-textual elementor-field  elementor-size-md" name="message" id="form-field-message" rows="5" placeholder="Type your message..." required="required"></textarea>
 							 </div>
@@ -528,14 +528,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<!-- First image aside in FAQ -->
 				<div class="elementor-element elementor-element-7a81c99 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="7a81c99" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-						<img fetchpriority="high" decoding="async" width="1920" height="1280" src="../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg" class="attachment-full size-full wp-image-1947" alt="" srcset="../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1920w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 300w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1024w, ../storage/sites/77/2024/02/rear-view-of-videographer-and-his-assistant-adjust-2023-11-27-05-14-25-utc-768x512.jpg 768w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">													</div>
+						<img loading="lazy" fetchpriority="high" decoding="async" width="1920" height="1280" src="../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg" class="attachment-full size-full wp-image-1947" alt="" srcset="../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1920w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 300w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1024w, ../storage/sites/77/2024/02/rear-view-of-videographer-and-his-assistant-adjust-2023-11-27-05-14-25-utc-768x512.jpg 768w, ../storage/sites/77/2024/02/closeup-of-vintage-camera-2023-11-27-05-04-56-utc-1024x577.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">													</div>
 				</div>
 				<!--/ First image aside in FAQ -->
 
 				<!--/ Second image aside in FAQ -->
 				<div class="elementor-element elementor-element-7a81c99 elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-image" data-id="7a81c99" data-element_type="widget" data-widget_type="image.default">
 					<div class="elementor-widget-container">
-							<img fetchpriority="high" decoding="async" width="1920" height="1280" src="../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg" class="attachment-full size-full wp-image-1947" alt="" srcset="../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1920w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 300w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1024w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 768w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">													</div>
+							<img loading="lazy" fetchpriority="high" decoding="async" width="1920" height="1280" src="../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg" class="attachment-full size-full wp-image-1947" alt="" srcset="../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1920w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 300w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1024w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 768w, ../storage/sites/77/2024/02/movie-clapper-board-in-action-2023-11-27-04-52-48-utc-1536x1024.jpg 1536w" sizes="(max-width: 1920px) 100vw, 1920px">													</div>
 					</div>
 					<!--/ Second image aside in FAQ -->
 				</div>
@@ -662,7 +662,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-element elementor-element-07a9578 elementor-widget elementor-widget-image" data-id="07a9578" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 														<a href="../index.php">
-							<img width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px">								</a>
+							<img loading="lazy" width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px">								</a>
 							</div>
 				</div>
 				<div class="elementor-element elementor-element-44c8474 elementor-widget elementor-widget-heading" data-id="44c8474" data-element_type="widget" data-widget_type="heading.default">
@@ -678,7 +678,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-accb70a elementor-widget elementor-widget-heading" data-id="accb70a" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<span class="elementor-heading-title elementor-size-default">Kuklase 12, Tallinn, Estonia</span>		</div>
+			<span class="elementor-heading-title elementor-size-default">Tallinn, Estonia</span>		</div>
 				</div>
 					</div>
 				</div>
@@ -725,7 +725,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-532d8db" href="#" target="_blank">
 						<span class="elementor-screen-only">Twitter</span>
-						<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+						<svg version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg" style="font-size: 25px"
+							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1668.56 1221.19"
+							style="enable-background:new 0 0 1668.56 1221.19;" xml:space="preserve">
+						<style type="text/css">
+							.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
+							.st1{fill:#FFFFFF;}
+						</style>
+						<g>
+							<circle class="st0" cx="834.28" cy="610.6" r="481.33"/>
+							<g id="layer1" transform="translate(52.390088,-25.058597)">
+								<path id="path1009" class="st1" d="M485.39,356.79l230.07,307.62L483.94,914.52h52.11l202.7-218.98l163.77,218.98h177.32
+									L836.82,589.6l215.5-232.81h-52.11L813.54,558.46L662.71,356.79H485.39z M562.02,395.17h81.46l359.72,480.97h-81.46L562.02,395.17
+									z"/>
+							</g>
+						</g>
+						</svg>					</a>
 				</span>
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d08cb86" href="#" target="_blank">
@@ -747,7 +762,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-2f864cc2 elementor-widget elementor-widget-image" data-id="2f864cc2" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-													<img width="413" height="91" src="../assets/images/logo-white.png" class="attachment-large size-large wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">													</div>
+													<img loading="lazy" width="413" height="91" src="../assets/images/logo-white.png" class="attachment-large size-large wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">													</div>
 				</div>
 				<div class="elementor-element elementor-element-2f3a7809 elementor-widget elementor-widget-text-editor" data-id="2f3a7809" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">

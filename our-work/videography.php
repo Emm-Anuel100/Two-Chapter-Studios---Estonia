@@ -143,7 +143,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.18.0 - 20-12-2023 */
 .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>								<a href="../index.php">
-			<img width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="logo" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
+			<img loading="lazy" width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="logo" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
 											</div>
 				</div>
 				</div>
@@ -158,14 +158,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2680"><a href="../our-services/index.php" class="elementor-sub-item">Our Services</a></li>
 </ul>
 </li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../about/index.php" aria-current="page" class="elementor-item elementor-item-active">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../about/index.php" aria-current="page" class="elementor-item">About</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item elementor-item-active">Our Work</a>
    <ul class="sub-menu elementor-nav-menu--dropdown">
       <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
       <li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
    </ul>
    </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../blog/index.php" aria-current="page" class="elementor-item elementor-item-active">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../blog/index.php" aria-current="page" class="elementor-item">Blog</a></li>
 <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item">Blog</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
 	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
@@ -265,66 +265,66 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
            <!-- Video production list -->   
 		        <section style="width: 100%; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; padding: 0 2%;">
                  <div style="width: 23rem;">
-                  <img src="../storage/sites/77/2024/02/1T3A1246-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
+                  <img loading="lazy" src="../storage/sites/77/2024/02/1T3A1246-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
 
                   <a href="javascript:void();">
                      <svg width="100" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: relative; top: -2rem; left: 0; cursor: pointer">
-                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="1" fill="#fff"/>
+                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="0.5" fill="#fff"/>
                         <polygon points="10,8 16,12 10,16" fill="#000"/>
                       </svg>  
                   </a>                 
                  </div>
 
                  <div style="width: 23rem">
-                  <img src="../storage/sites/77/2024/02/1T3A9983 copy.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
+                  <img loading="lazy" src="../storage/sites/77/2024/02/1T3A9983 copy.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
 
                   <a href="javascript:void();">
                      <svg width="100" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: relative; top: -2rem; left: 0; cursor: pointer">
-                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="1" fill="#fff"/>
+                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="0.5" fill="#fff"/>
                         <polygon points="10,8 16,12 10,16" fill="#000"/>
                       </svg>  
                   </a>                 
                  </div>
 
                  <div style="width: 23rem">
-                  <img src="../storage/sites/77/2024/02/1T3A6430-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
+                  <img loading="lazy" src="../storage/sites/77/2024/02/1T3A6430-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
 
                   <a href="javascript:void();">
                      <svg width="100" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: relative; top: -2rem; left: 0; cursor: pointer">
-                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="1" fill="#fff"/>
+                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="0.5" fill="#fff"/>
                         <polygon points="10,8 16,12 10,16" fill="#000"/>
                       </svg>  
                   </a>                 
                  </div>
 
                  <div style="width: 23rem">
-                  <img src="../storage/sites/77/2024/02/1T3A5169-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
+                  <img loading="lazy" src="../storage/sites/77/2024/02/1T3A5169-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
 
                   <a href="javascript:void();">
                      <svg width="100" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 27px; left: 0; cursor: pointer">
-                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="1" fill="#fff"/>
+                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="0.5" fill="#fff"/>
                         <polygon points="10,8 16,12 10,16" fill="#000"/>
                       </svg>  
                   </a>                 
                  </div>
                  
                  <div style="width: 23rem">
-                  <img src="../storage/sites/77/2024/02/1T3A4940-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
+                  <img loading="lazy" src="../storage/sites/77/2024/02/1T3A4940-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
 
                   <a href="javascript:void();">
                      <svg width="100" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 27px; left: 0; cursor: pointer">
-                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="1" fill="#fff"/>
+                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="0.5" fill="#fff"/>
                         <polygon points="10,8 16,12 10,16" fill="#000"/>
                       </svg>  
                   </a>                 
                  </div>
 
                  <div style="width: 23rem">
-                  <img src="../storage/sites/77/2024/02/Bogdan Headsot-013-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
+                  <img loading="lazy" src="../storage/sites/77/2024/02/Bogdan Headsot-013-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">
 
                   <a href="javascript:void();">
                      <svg width="100" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: relative; bottom: 27px; left: 0; cursor: pointer">
-                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="1" fill="#fff"/>
+                        <circle cx="12" cy="12" r="10" stroke="#000" stroke-width="0.5" fill="#fff"/>
                         <polygon points="10,8 16,12 10,16" fill="#000"/>
                       </svg>  
                   </a>                 
@@ -528,7 +528,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<script>
 					document.write(new Date().getFullYear());
 				 </script>
-				  Kuklase 12, Tallinn, Estonia
+				  Two Chapters Studios. All rights reserved.
 			</h2>		</div>
 				</div>
 				</div>
@@ -536,7 +536,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-accb70a elementor-widget elementor-widget-heading" data-id="accb70a" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<span class="elementor-heading-title elementor-size-default">Kuklase 12, Tallinn, Estonia
+			<span class="elementor-heading-title elementor-size-default">Tallinn, Estonia
 			</span>		</div>
 				</div>
 					</div>
@@ -585,7 +585,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-532d8db" href="#" target="_blank">
 						<span class="elementor-screen-only">Twitter</span>
-						<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+						<svg version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg" style="font-size: 25px"
+							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1668.56 1221.19"
+							style="enable-background:new 0 0 1668.56 1221.19;" xml:space="preserve">
+						<style type="text/css">
+							.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
+							.st1{fill:#FFFFFF;}
+						</style>
+						<g>
+							<circle class="st0" cx="834.28" cy="610.6" r="481.33"/>
+							<g id="layer1" transform="translate(52.390088,-25.058597)">
+								<path id="path1009" class="st1" d="M485.39,356.79l230.07,307.62L483.94,914.52h52.11l202.7-218.98l163.77,218.98h177.32
+									L836.82,589.6l215.5-232.81h-52.11L813.54,558.46L662.71,356.79H485.39z M562.02,395.17h81.46l359.72,480.97h-81.46L562.02,395.17
+									z"/>
+							</g>
+						</g>
+						</svg>					</a>
 				</span>
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d08cb86" href="#" target="_blank">

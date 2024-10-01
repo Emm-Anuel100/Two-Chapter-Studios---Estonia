@@ -25,6 +25,9 @@
 		<meta name="twitter:description" content="Discover premium media services including photography, videography, and more. Contact us to make your vision a reality.">
 		<meta name="twitter:image" content="../assets/images/logo.png">
 
+		<!-- Bootstrap Cdn Link --->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <meta name='robots' content='max-image-preview:large'>
 <!-- <link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Feed" href="../feed/index.php">
 <link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Comments Feed" href="../comments/feed/index.php"> -->
@@ -47,6 +50,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		padding: 0 !important;
 	}
 </style>
+
 <style id='classic-theme-styles-inline-css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -143,7 +147,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.18.0 - 20-12-2023 */
 			.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>								<a href="../index.php">
-			<img width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="logo" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
+			<img loading="lazy" width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="logo" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px" loading="lazy">				</a>
 											</div>
 				</div>
 				</div>
@@ -158,14 +162,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2680"><a href="../our-services/index.php" class="elementor-sub-item">Our Services</a></li>
 </ul>
 </li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../about/index.php" aria-current="page" class="elementor-item elementor-item-active">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../about/index.php" aria-current="page" class="elementor-item">About</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item elementor-item-active">Our Work</a>
 	<ul class="sub-menu elementor-nav-menu--dropdown">
 		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
 		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
 	</ul>
 	</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../blog/index.php" aria-current="page" class="elementor-item elementor-item-active">Blog</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../blog/index.php" aria-current="page" class="elementor-item">Blog</a></li>
 <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item">Blog</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
 	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
@@ -216,7 +220,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</div>
 				</div>
 				<div data-elementor-type="wp-page" data-elementor-id="1416" class="elementor elementor-1416" data-elementor-post-type="page">
-						<div class="elementor-element elementor-element-055d9a5 e-flex e-con-boxed e-con e-parent" data-id="055d9a5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true" style="background-image: url('../storage/sites/77/2024/02/IMG_9931.jpg'); background-position: center; background-position-y: -60vh;">
+						<div style="background-image: url('../storage/sites/77/2024/02/IMG_9931.jpg'); background-position: center;" class="elementor-element elementor-element-055d9a5 e-flex e-con-boxed e-con e-parent" data-id="055d9a5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}" data-core-v316-plus="true">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-fd35243 e-flex e-con-boxed e-con e-child" data-id="fd35243" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
@@ -258,224 +262,113 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default" sty;e="width: 50% !important">From candid moments to polished portraits, our photography captures it all. See how we turn everyday moments into memories that last.</h2>		</div>
 				</div>
+				</div>
+		
 
+			<!-- Image gallery Tab section -->
+			 <section>
+			 <div class="container">
+				<div class="row">
+					<div>
+						<div class="tab" role="tabpanel">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab">All</a></li>
+									<li role="presentation"><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab">Beauty & Fashion</a></li>
+									<li role="presentation"><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab">Love</a></li>
+									<li role="presentation"><a href="#Section4" aria-controls="messages" role="tab" data-toggle="tab">Headshots</a></li>
+								</ul><br />
+
+								<!-- Tab panes -->
+								<div class="tab-content tabs">
+									<div role="tabpanel" class="tab-pane active" id="Section1">
+										<!-- All photos tab -->
+										 <div class="tab-wrapper">
+											<img src="../assets/images/love/1T3A0615-Edit copy.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/Bogdan Headsot-013-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A7771-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_2021.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A5061-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/IMG_7822.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/Studio Session-027-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A1296-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_6964.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A1210 copy.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/9.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A1128-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A4920-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A4999-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A4554-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_0506.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_1938-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/beauty-1.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_0081.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_0277.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_7144 (1).jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A1189-Edit copy.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/Bogdan Headsot-013-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A6416-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A7785-Edit copy.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A5154-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/1T3A9273-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+										 </div>
+										<!--/ All photos tab -->
+									</div>
+									<div role="tabpanel" class="tab-pane" id="Section2">
+										<!-- Beauty photos tab -->
+										<div class="tab-wrapper">
+											<img src="../assets/images/beauty/9.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/beauty-1.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_0081.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_0277.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_0506.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_1938-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_2021.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_6964.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/beauty/IMG_7144 (1).jpg" alt="image" class="tab-images" loading="lazy">
+										 </div>
+										<!--/ Beauty photos tab -->
+									</div>
+									<div role="tabpanel" class="tab-pane" id="Section3">
+										<!-- Love photos tab -->
+										<div class="tab-wrapper">
+											<img src="../assets/images/love/1T3A0615-Edit copy.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A1128-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A1189-Edit copy.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A1210 copy.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A4554-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A7771-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/1T3A7785-Edit copy.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/love-1.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/love/love.jpg" alt="image" class="tab-images" loading="lazy">
+											
+										 </div>
+										<!--/ Love photos tab -->
+									</div>
+									<div role="tabpanel" class="tab-pane" id="Section4">
+										<!-- Headshot photos tab -->
+										<div class="tab-wrapper">
+											<img src="../assets/images/headshots/1T3A4920-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A4999-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A5061-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A5154-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A6416-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/Bogdan Headsot-013-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/IMG_7822.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/Studio Session-027-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+											<img src="../assets/images/headshots/1T3A1296-Edit.jpg" alt="image" class="tab-images" loading="lazy">
+										 </div>
+										<!--/ Headshot photos tab -->
+									</div>
+								</div>
+						</div>
+					</div>
 				</div>
-		<div class="elementor-element elementor-element-e0ead92 e-con-full e-flex e-con e-child" data-id="e0ead92" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-		<div class="elementor-element elementor-element-fa8aa35 e-flex e-con-boxed e-con e-child" data-id="fa8aa35" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-c2c377b e-flex e-con-boxed e-con e-child" data-id="c2c377b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-d34b61d elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="d34b61d" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-			<link rel="stylesheet" href="../modules/f65f29574d/assets/css/widget-icon-box.min.css">		<div class="elementor-icon-box-wrapper">
-						<div class="elementor-icon-box-icon">
 			</div>
-						<div class="elementor-icon-box-content">
-				<h3 class="elementor-icon-box-title">
-					<a href="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1hIT21CVjRqc19FP2ZlYXR1cmU9b2VtYmVkIn0%3D">
-											</a>
-				</h3>
-							</div>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-450dbea elementor-widget elementor-widget-image-box" data-id="450dbea" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.18.0 - 20-12-2023 */
-.elementor-widget-image-box .elementor-image-box-content{width:100%}@media (min-width:768px){.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper,.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{display:flex}.elementor-widget-image-box.elementor-position-right .elementor-image-box-wrapper{text-align:right;flex-direction:row-reverse}.elementor-widget-image-box.elementor-position-left .elementor-image-box-wrapper{text-align:left;flex-direction:row}.elementor-widget-image-box.elementor-position-top .elementor-image-box-img{margin:auto}.elementor-widget-image-box.elementor-vertical-align-top .elementor-image-box-wrapper{align-items:flex-start}.elementor-widget-image-box.elementor-vertical-align-middle .elementor-image-box-wrapper{align-items:center}.elementor-widget-image-box.elementor-vertical-align-bottom .elementor-image-box-wrapper{align-items:flex-end}}@media (max-width:767px){.elementor-widget-image-box .elementor-image-box-img{margin-left:auto!important;margin-right:auto!important;margin-bottom:15px}}.elementor-widget-image-box .elementor-image-box-img{display:inline-block}.elementor-widget-image-box .elementor-image-box-title a{color:inherit}.elementor-widget-image-box .elementor-image-box-wrapper{text-align:center}.elementor-widget-image-box .elementor-image-box-description{margin:0}</style><div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Siren Station</h3></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-70d739c e-con-full e-flex e-con e-child" data-id="70d739c" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-169a124 elementor-widget elementor-widget-image-box" data-id="169a124" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Client</h3><p class="elementor-image-box-description">Arowwai Inc.</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-2e88d29 elementor-widget elementor-widget-image-box" data-id="2e88d29" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Date</h3><p class="elementor-image-box-description">Jan 2023</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-365b361 elementor-widget elementor-widget-image-box" data-id="365b361" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Category</h3><p class="elementor-image-box-description">Lifestyle</p></div></div>		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-5ad3948 e-con-full e-flex e-con e-child" data-id="5ad3948" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-		<div class="elementor-element elementor-element-5e5c426 e-flex e-con-boxed e-con e-child" data-id="5e5c426" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-21e3da4 e-flex e-con-boxed e-con e-child" data-id="21e3da4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-164c3ad elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="164c3ad" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-icon-box-wrapper">
-						<div class="elementor-icon-box-icon">
-			</div>
-						<div class="elementor-icon-box-content">
-				<h3 class="elementor-icon-box-title">
-					<a href="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1hIT21CVjRqc19FP2ZlYXR1cmU9b2VtYmVkIn0%3D">
-											</a>
-				</h3>
-							</div>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-bd103d1 elementor-widget elementor-widget-image-box" data-id="bd103d1" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Kaiser Chiefs 'KC7'</h3></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-1dcbdf6 e-flex e-con-boxed e-con e-child" data-id="1dcbdf6" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-78ed90a elementor-widget elementor-widget-image-box" data-id="78ed90a" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Client</h3><p class="elementor-image-box-description">Jack Liam H.</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-d51cf0a elementor-widget elementor-widget-image-box" data-id="d51cf0a" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Date</h3><p class="elementor-image-box-description">Feb 2020</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-b1e52a3 elementor-widget elementor-widget-image-box" data-id="b1e52a3" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Category</h3><p class="elementor-image-box-description">Music</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-c8258f5 e-flex e-con-boxed e-con e-child" data-id="c8258f5" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-98b5ffc e-flex e-con-boxed e-con e-child" data-id="98b5ffc" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-8ad9dbb elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="8ad9dbb" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-icon-box-wrapper">
-						<div class="elementor-icon-box-icon">
-			</div>
-						<div class="elementor-icon-box-content">
-				<h3 class="elementor-icon-box-title">
-					<a href="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1hIT21CVjRqc19FP2ZlYXR1cmU9b2VtYmVkIn0%3D">
-											</a>
-				</h3>
-							</div>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-db17eb9 elementor-widget elementor-widget-image-box" data-id="db17eb9" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Sequin Perfume</h3></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-be61ddd e-flex e-con-boxed e-con e-child" data-id="be61ddd" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-1e374af elementor-widget elementor-widget-image-box" data-id="1e374af" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Client</h3><p class="elementor-image-box-description">Rox scent</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-a86ea41 elementor-widget elementor-widget-image-box" data-id="a86ea41" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Date</h3><p class="elementor-image-box-description">Dec 2024</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-9c5ef45 elementor-widget elementor-widget-image-box" data-id="9c5ef45" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Category</h3><p class="elementor-image-box-description">Product</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-75f1688 e-con-full e-flex e-con e-child" data-id="75f1688" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-		<div class="elementor-element elementor-element-69fe610 e-flex e-con-boxed e-con e-child" data-id="69fe610" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-ea7f07e e-flex e-con-boxed e-con e-child" data-id="ea7f07e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-084ecb1 elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="084ecb1" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-icon-box-wrapper">
-						<div class="elementor-icon-box-icon">
-			</div>
-						<div class="elementor-icon-box-content">
-				<h3 class="elementor-icon-box-title">
-					<a href="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1hIT21CVjRqc19FP2ZlYXR1cmU9b2VtYmVkIn0%3D">
-											</a>
-				</h3>
-							</div>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-ac34b09 elementor-widget elementor-widget-image-box" data-id="ac34b09" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Slingsby Grill</h3></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-6cccb99 e-flex e-con-boxed e-con e-child" data-id="6cccb99" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-186639b elementor-widget elementor-widget-image-box" data-id="186639b" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Client</h3><p class="elementor-image-box-description">Borcelle</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-df4ba15 elementor-widget elementor-widget-image-box" data-id="df4ba15" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Date</h3><p class="elementor-image-box-description">Aug 2019</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-7447156 elementor-widget elementor-widget-image-box" data-id="7447156" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Category</h3><p class="elementor-image-box-description">Food + Drink</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-		<div class="elementor-element elementor-element-e46c1c9 e-flex e-con-boxed e-con e-child" data-id="e46c1c9" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-acb0647 e-flex e-con-boxed e-con e-child" data-id="acb0647" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-4c1da00 elementor-view-framed elementor-shape-circle elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="4c1da00" data-element_type="widget" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-icon-box-wrapper">
-						<div class="elementor-icon-box-icon">
-			</div>
-						<div class="elementor-icon-box-content">
-				<h3 class="elementor-icon-box-title">
-					<a href="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJ0eXBlIjoidmlkZW8iLCJ2aWRlb1R5cGUiOiJ5b3V0dWJlIiwidXJsIjoiaHR0cHM6XC9cL3d3dy55b3V0dWJlLmNvbVwvZW1iZWRcL1hIT21CVjRqc19FP2ZlYXR1cmU9b2VtYmVkIn0%3D">
-											</a>
-				</h3>
-							</div>
-		</div>
-				</div>
-				</div>
-					</div>
-				</div>
-				<div class="elementor-element elementor-element-d4ee146 elementor-widget elementor-widget-image-box" data-id="d4ee146" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Team KJ X Micky Yule</h3></div></div>		</div>
-				</div>
-		<div class="elementor-element elementor-element-0bb3ad2 e-flex e-con-boxed e-con e-child" data-id="0bb3ad2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-976dee9 elementor-widget elementor-widget-image-box" data-id="976dee9" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Client</h3><p class="elementor-image-box-description">Platypus Inc.</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-b0fca25 elementor-widget elementor-widget-image-box" data-id="b0fca25" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Date</h3><p class="elementor-image-box-description">Mar 2025</p></div></div>		</div>
-				</div>
-				<div class="elementor-element elementor-element-e9f1d79 elementor-widget elementor-widget-image-box" data-id="e9f1d79" data-element_type="widget" data-widget_type="image-box.default">
-				<div class="elementor-widget-container">
-			<div class="elementor-image-box-wrapper"><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Category</h3><p class="elementor-image-box-description">Sports</p></div></div>		</div>
-				</div>
-					</div>
-				</div>
-					</div>
-				</div>
-				</div>
-					</div>
+			 </section>
+			<!-- Image gallery Tab section -->
+
+			 </div>
 				</div>
 					</div>
 				</div>
@@ -600,11 +493,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-88147a3 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-image" data-id="88147a3" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img fetchpriority="high" decoding="async" width="2790" height="698" src="../storage/sites/77/2024/02/logo01.png" class="attachment-full size-full wp-image-1716" alt="" srcset="../storage/sites/77/2024/02/logo01.png 2790w, ../storage/sites/77/2024/02/logo01-300x75.png 300w, ../storage/sites/77/2024/02/logo01-1024x256.png 1024w, ../storage/sites/77/2024/02/logo01-768x192.png 768w, ../storage/sites/77/2024/02/logo01-1536x384.png 1536w, ../storage/sites/77/2024/02/logo01-2048x512.png 2048w" sizes="(max-width: 2790px) 100vw, 2790px">															</div>
+															<img loading="lazy" fetchpriority="high" decoding="async" width="2790" height="698" src="../storage/sites/77/2024/02/logo01.png" class="attachment-full size-full wp-image-1716" alt="" srcset="../storage/sites/77/2024/02/logo01.png 2790w, ../storage/sites/77/2024/02/logo01-300x75.png 300w, ../storage/sites/77/2024/02/logo01-1024x256.png 1024w, ../storage/sites/77/2024/02/logo01-768x192.png 768w, ../storage/sites/77/2024/02/logo01-1536x384.png 1536w, ../storage/sites/77/2024/02/logo01-2048x512.png 2048w" sizes="(max-width: 2790px) 100vw, 2790px">															</div>
 				</div>
 				<div class="elementor-element elementor-element-83d2087 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-image" data-id="83d2087" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="2790" height="698" src="../storage/sites/77/2024/02/logo02.png" class="attachment-full size-full wp-image-1717" alt="" srcset="../storage/sites/77/2024/02/logo02.png 2790w, ../storage/sites/77/2024/02/logo02-300x75.png 300w, ../storage/sites/77/2024/02/logo02-1024x256.png 1024w, ../storage/sites/77/2024/02/logo02-768x192.png 768w, ../storage/sites/77/2024/02/logo02-1536x384.png 1536w, ../storage/sites/77/2024/02/logo02-2048x512.png 2048w" sizes="(max-width: 2790px) 100vw, 2790px">															</div>
+															<img loading="lazy" decoding="async" width="2790" height="698" src="../storage/sites/77/2024/02/logo02.png" class="attachment-full size-full wp-image-1717" alt="" srcset="../storage/sites/77/2024/02/logo02.png 2790w, ../storage/sites/77/2024/02/logo02-300x75.png 300w, ../storage/sites/77/2024/02/logo02-1024x256.png 1024w, ../storage/sites/77/2024/02/logo02-768x192.png 768w, ../storage/sites/77/2024/02/logo02-1536x384.png 1536w, ../storage/sites/77/2024/02/logo02-2048x512.png 2048w" sizes="(max-width: 2790px) 100vw, 2790px">															</div>
 				</div>
 				<div class="elementor-element elementor-element-afacbb4 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-image" data-id="afacbb4" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
@@ -673,7 +566,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<script>
 					document.write(new Date().getFullYear());
 				 </script>
-				  Kuklase 12, Tallinn, Estonia
+				  Two Chapters Studios. All rights reserved.
 			</h2>		</div>
 				</div>
 				</div>
@@ -681,7 +574,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-accb70a elementor-widget elementor-widget-heading" data-id="accb70a" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<span class="elementor-heading-title elementor-size-default">Kuklase 12, Tallinn, Estonia
+			<span class="elementor-heading-title elementor-size-default">Tallinn, Estonia
 			</span>		</div>
 				</div>
 					</div>
@@ -730,7 +623,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-532d8db" href="#" target="_blank">
 						<span class="elementor-screen-only">Twitter</span>
-						<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+						<svg version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg" style="font-size: 25px"
+							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1668.56 1221.19"
+							style="enable-background:new 0 0 1668.56 1221.19;" xml:space="preserve">
+						<style type="text/css">
+							.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
+							.st1{fill:#FFFFFF;}
+						</style>
+						<g>
+							<circle class="st0" cx="834.28" cy="610.6" r="481.33"/>
+							<g id="layer1" transform="translate(52.390088,-25.058597)">
+								<path id="path1009" class="st1" d="M485.39,356.79l230.07,307.62L483.94,914.52h52.11l202.7-218.98l163.77,218.98h177.32
+									L836.82,589.6l215.5-232.81h-52.11L813.54,558.46L662.71,356.79H485.39z M562.02,395.17h81.46l359.72,480.97h-81.46L562.02,395.17
+									z"/>
+							</g>
+						</g>
+						</svg>					</a>
 				</span>
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d08cb86" href="#" target="_blank">
@@ -892,7 +800,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					document.addEventListener( event, lazyloadRunObserver );
 				} );
 			</script>
-			<link rel='stylesheet' id='elementor-post-41-css' href='../storage/sites/77/elementor/css/post-41.css' media='all'>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel='stylesheet' id='elementor-post-41-css' href='../storage/sites/77/elementor/css/post-41.css' media='all'>
 <link rel='stylesheet' id='elementor-post-2668-css' href='../storage/sites/77/elementor/css/post-2668.css' media='all'>
 <link rel='stylesheet' id='widget-gallery-css' href='../modules/ccc473c329/assets/css/widget-gallery.min.css' media='all'>
 <link rel='stylesheet' id='elementor-gallery-css' href='../modules/f65f29574d/assets/lib/e-gallery/css/e-gallery.min.css' media='all'>
@@ -920,5 +836,135 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 <script src="../modules/f65f29574d/assets/js/frontend.min.js" id="elementor-frontend-js"></script>
 <script src="../modules/ccc473c329/assets/js/elements-handlers.min.js" id="pro-elements-handlers-js"></script>
 
+
+<style>
+*{
+	list-style: none;
+}
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.tab{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.tab .nav-tabs{
+    margin: 0;
+    border: none;
+    position: relative;
+	 display: flex;
+	 justify-content: center;
+	 gap: 1rem;
+}   
+.tab .nav-tabs li a{
+    color: #333;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 11px 18px;
+	 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 10px 10px 0;
+    border-radius: 0;
+    border: 1px solid #eee;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+
+.tab .nav-tabs li.active a,
+.tab .nav-tabs li a:hover,
+.tab .nav-tabs li.active a:hover{
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #eee;
+}
+.tab .nav-tabs li a:before{
+    content: '';
+    background-color: #eee;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s;
+}
+.tab .nav-tabs li.active a:before,
+.tab .nav-tabs li a:hover:before{
+    background-color: #000;
+    width: 95%;
+    left: 0;
+}
+.tab .tab-content{
+    color: #333;
+    background: linear-gradient(to right, transparent 50%, #fff 50%);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+	 border-radius: .3rem;
+    padding: 20px 25px;
+    border: 2px solid #eee;
+}
+
+@media (max-width: 1150px){
+	.tab .tab-content{
+		padding: 10px !important;
+	}
+}
+
+/** Tab section styles */
+div.tab-wrapper{
+	width: 100%; 
+	display: flex; 
+	flex-wrap: wrap; 
+	gap: 2px; 
+	justify-content: space-between;
+}
+
+@media (max-width: 1150px){
+	div.tab-wrapper{
+	justify-content: center !important;
+}
+}
+
+img.tab-images{
+	width: 33.2%;
+	object-fit: cover;
+	height: 32rem;
+}
+
+@media (max-width: 1150px){
+	img.tab-images{
+	width: 36.7% !important;
+}
+}
+
+
+@media (max-width: 700px){
+	img.tab-images{
+	width: 32rem !important;
+	height: 28rem !important;
+}
+}
+
+
+
+@media only screen and (max-width: 479px){
+    .tab .nav-tabs li{
+        width: 100%;
+        text-align: center;
+    }
+    .tab .nav-tabs li a{ margin-right: 0; }
+}
+</style>
 </body>
 </html>

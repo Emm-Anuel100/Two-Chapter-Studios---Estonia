@@ -136,7 +136,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-widget-container">
 						<style>/*! elementor - v3.18.0 - 20-12-2023 */
 			.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>								<a href="../">
-						<img width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="logo" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
+						<img width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="logo" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px" loading="lazy">				</a>
 														</div>
 							</div>
 							</div>
@@ -145,14 +145,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-widget-container">
 						<link rel="stylesheet" href="../modules/ccc473c329/assets/css/widget-nav-menu.min.css">			<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-drop-out">
 							<ul id="menu-1-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="../index.php" class="elementor-item">Home</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item">About</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item elementor-item-active">About</a></li>
 			<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-14"><a href="#" class="elementor-item elementor-item-anchor">Pages</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-501 current_page_item menu-item-2681"><a href="index.php" aria-current="page" class="elementor-sub-item elementor-item-active">About</a></li>
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2680"><a href="../our-services/index.php" class="elementor-sub-item">Our Services</a></li>
 			</ul>
 			</li> -->
-			<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item elementor-item-active">Our Work</a>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item">Our Work</a>
 				<ul class="sub-menu elementor-nav-menu--dropdown">
 					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
 					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
@@ -409,144 +409,70 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							</div>
 								</div>
 							</div>
-					<div class="elementor-element elementor-element-4f58857 e-flex e-con-boxed e-con e-child" data-id="4f58857" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
-								<div class="e-con-inner">
-							<div class="elementor-element elementor-element-7862e3a elementor-flip-box--effect-zoom-in elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-flip-box" data-id="7862e3a" data-element_type="widget" data-widget_type="flip-box.default">
-							<div class="elementor-widget-container">
-						<link rel="stylesheet" href="../modules/ccc473c329/assets/css/widget-flip-box.min.css"><div class="elementor-flip-box" tabindex="0">
-						<!-- <div class="elementor-flip-box__layer elementor-flip-box__front" style="margin: 0; border-radius: 50% !important; height: 20rem; width: 19rem"> -->
-							<div class="elementor-flip-box__layer elementor-flip-box__front" style="border-radius: 1rem; background: url(../wp-content/uploads/sites/77/2024/02/capture.png); background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%;">
-							<div class="elementor-flip-box__layer__overlay">
-								<div class="elementor-flip-box__layer__inner">
-								</div>
-							</div>
-						</div>
-						<!-- <div class="elementor-flip-box__layer elementor-flip-box__back" style="margin: 0; border-radius: 50% !important; height: 20rem; width: 19rem; display: flex; "> -->
-						<div class="elementor-flip-box__layer elementor-flip-box__back" style="border-radius: 1rem;">
-						<div class="elementor-flip-box__layer__overlay">
-							<div class="elementor-flip-box__layer__inner">
-							  <h3 class="elementor-flip-box__layer__title">
-								Adeniyi Adekoya				</h3>
-								
-							<p class="elementor-flip-box__layer__description">
-								Photographer</p>
-								
-							</div>
-					</div>
-					</div>
-					</div>
-					</div>
-					</div>
+					
+			 <!-- Staff Slider --->
+			 <div class="elementor-element elementor-element-8270a17 e-flex e-con-boxed e-con e-parent" data-id="8270a17" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d2f8333 elementor-skin-carousel elementor-widget elementor-widget-media-carousel" data-id="d2f8333" data-element_type="widget" data-settings="{&quot;speed&quot;:7000,&quot;autoplay_speed&quot;:0,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:64,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper">
+				<div class="swiper-wrapper">
+								<div class="swiper-slide">
+							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
 
-							<div class="elementor-element elementor-element-f70a1c6 elementor-flip-box--effect-zoom-in elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-flip-box" data-id="f70a1c6" data-element_type="widget" data-widget_type="flip-box.default">
-							<div class="elementor-widget-container">
-								<div class="elementor-flip-box" tabindex="0">
-						<div class="elementor-flip-box__layer elementor-flip-box__front" style="border-radius: 1rem;">
-							<div class="elementor-flip-box__layer__overlay">
-								<div class="elementor-flip-box__layer__inner">
-								</div>
-							</div>
-						</div>
-						<div class="elementor-flip-box__layer elementor-flip-box__back" style="border-radius: 1rem;">
-						<div class="elementor-flip-box__layer__overlay">
-							<div class="elementor-flip-box__layer__inner">
-														<h3 class="elementor-flip-box__layer__title">
-															Adeolu Samuel					</h3>
-								
-														<p class="elementor-flip-box__layer__description">
-															Photographer & Cinematograher					</p>
-								
-											</div>
 					</div>
-					</div>
-					</div>
-							</div>
-							</div>
-							<div class="elementor-element elementor-element-446123c elementor-flip-box--effect-zoom-in elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-flip-box" data-id="446123c" data-element_type="widget" data-widget_type="flip-box.default">
-							<div class="elementor-widget-container">
-								<div class="elementor-flip-box" tabindex="0">
-						<div class="elementor-flip-box__layer elementor-flip-box__front" style="border-radius: 1rem;">
-							<div class="elementor-flip-box__layer__overlay">
-								<div class="elementor-flip-box__layer__inner">
-									
-									
-														</div>
-							</div>
-						</div>
-						<div class="elementor-flip-box__layer elementor-flip-box__back" style="border-radius: 1rem;">
-						<div class="elementor-flip-box__layer__overlay">
-							<div class="elementor-flip-box__layer__inner">
-														<h3 class="elementor-flip-box__layer__title">
-															Reece Mladjov					</h3>
-								
-														<p class="elementor-flip-box__layer__description">
-															Cinematographer						</p>
-								
-											</div>
-					</div>
-					</div>
-					</div>
-							</div>
-							</div>
-							<div class="elementor-element elementor-element-7291f5d elementor-flip-box--effect-zoom-in elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-flip-box" data-id="7291f5d" data-element_type="widget" data-widget_type="flip-box.default">
-							
-								<div class="elementor-widget-container">
-								<div class="elementor-flip-box" tabindex="0">
-						<div class="elementor-flip-box__layer elementor-flip-box__front" style="border-radius: 1rem;">
-							<div class="elementor-flip-box__layer__overlay">
-								<div class="elementor-flip-box__layer__inner">
-									
-								</div>
-							</div>
-						</div>
-						<div class="elementor-flip-box__layer elementor-flip-box__back" style="border-radius: 1rem;">
-						<div class="elementor-flip-box__layer__overlay">
-							<div class="elementor-flip-box__layer__inner">
-									<h3 class="elementor-flip-box__layer__title">
-										Oluwajoba Adekoya						</h3>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>Oluwajoba Adekoya</strong>
+							— Makeup artist  			</div>
+			</a>						</div>
+			<!----->
+			<div class="swiper-slide">
+							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/capture.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+
 			
-									<p class="elementor-flip-box__layer__description">
-										Makeup artist						</p>
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-">
+				<strong>Adeniyi Adekoya</strong>
+							— Photographer  			</div>
+			</a>						</div>
+			<!----->
+											<div class="swiper-slide">
+											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice8.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+
 			
-								</div>
-							</div>
-							</div>
-							</div>
-						</div>
-						</div>
-
-
-						<!--- Row Last -->
-						<div class="elementor-element elementor-element-7291f5d elementor-flip-box--effect-zoom-in elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-widget elementor-widget-flip-box" data-id="7291f5d" data-element_type="widget" data-widget_type="flip-box.default">
-							
-							<div class="elementor-widget-container">
-							<div class="widget-last-row elementor-flip-box" tabindex="0" style="border-radius: 1rem; position: relative;  height: 30rem; width: 270%; left: 79%">
-					<div class="elementor-flip-box__layer elementor-flip-box__front" style="border-radius: 1rem; background: url(../wp-content/uploads/sites/77/2024/02/slice8-.jpg); background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%;">
-						<div class="elementor-flip-box__layer__overlay">
-							<div class="elementor-flip-box__layer__inner">
-								
-							</div>
-						</div>
 					</div>
-					<div class="elementor-flip-box__layer elementor-flip-box__back" style="border-radius: 1rem;">
-					<div class="elementor-flip-box__layer__overlay">
-						<div class="elementor-flip-box__layer__inner">
-								<h3 class="elementor-flip-box__layer__title">
-								David Dauda						</h3>
-		
-								<p class="elementor-flip-box__layer__description">
-								Founder TCM, Director, Producer & Photographer						</p>
-		
-							</div>
-						</div>
-						</div>
-						</div>
-					</div>
-					<!---/ Row Last -->
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>David Daudu</strong> <br/>
+ — Founder TCM, Director, Producer & Photographer			</div>
+									</div>
+											<div class="swiper-slide">
+											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice4.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
 
+			
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>Adeolu Samuel</strong>
+ — Photographer & Cinematograher</div>
+									</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice5.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+
+			
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>Reece Mladjov </strong>
+ — Cinematograher			</div>
+									</div>
+									</div>
+										</div>
+		</div>
+				</div>
+				</div>
 					</div>
 				</div>
-			 </div>
+				<!--/ Staff Slider --->
+
 									
 					</div>
 				</div>
@@ -836,7 +762,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-element elementor-element-07a9578 elementor-widget elementor-widget-image" data-id="07a9578" data-element_type="widget" data-widget_type="image.default">
 							<div class="elementor-widget-container">
 																			<a href="../index.php">
-										<img width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px">								</a>
+										<img width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px" loading="lazy">								</a>
 																		</div>
 							</div>
 							<div class="elementor-element elementor-element-44c8474 elementor-widget elementor-widget-heading" data-id="44c8474" data-element_type="widget" data-widget_type="heading.default">
@@ -852,7 +778,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 								<div class="e-con-inner">
 							<div class="elementor-element elementor-element-accb70a elementor-widget elementor-widget-heading" data-id="accb70a" data-element_type="widget" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-						<span class="elementor-heading-title elementor-size-default">Kuklase 12, Tallinn, Estonia</span>		</div>
+						<span class="elementor-heading-title elementor-size-default">Tallinn, Estonia</span>		</div>
 							</div>
 								</div>
 							</div>
@@ -900,7 +826,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 										<span class="elementor-grid-item">
 								<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-532d8db" href="#" target="_blank">
 									<span class="elementor-screen-only">Twitter</span>
-									<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
+									<svg version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg" style="font-size: 25px"
+							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1668.56 1221.19"
+							style="enable-background:new 0 0 1668.56 1221.19;" xml:space="preserve">
+						<style type="text/css">
+							.st0{stroke:#FFFFFF;stroke-miterlimit:10;}
+							.st1{fill:#FFFFFF;}
+						</style>
+						<g>
+							<circle class="st0" cx="834.28" cy="610.6" r="481.33"/>
+							<g id="layer1" transform="translate(52.390088,-25.058597)">
+								<path id="path1009" class="st1" d="M485.39,356.79l230.07,307.62L483.94,914.52h52.11l202.7-218.98l163.77,218.98h177.32
+									L836.82,589.6l215.5-232.81h-52.11L813.54,558.46L662.71,356.79H485.39z M562.02,395.17h81.46l359.72,480.97h-81.46L562.02,395.17
+									z"/>
+							</g>
+						</g>
+						</svg>					</a>
 							</span>
 										<span class="elementor-grid-item">
 								<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d08cb86" href="#" target="_blank">
@@ -922,7 +863,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 								<div class="e-con-inner">
 							<div class="elementor-element elementor-element-2f864cc2 elementor-widget elementor-widget-image" data-id="2f864cc2" data-element_type="widget" data-widget_type="image.default">
 							<div class="elementor-widget-container">
-																		<img width="413" height="91" src="../assets/images/logo-white.png" class="attachment-large size-large wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">															</div>
+																		<img width="413" height="91" src="../assets/images/logo-white.png" class="attachment-large size-large wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px" loading="lazy">															</div>
 							</div>
 							<div class="elementor-element elementor-element-2f3a7809 elementor-widget elementor-widget-text-editor" data-id="2f3a7809" data-element_type="widget" data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
