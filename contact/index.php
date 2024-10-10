@@ -91,23 +91,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'])) {
 	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
-			<!-- SEO Meta Tags -->
-			<meta name="description" content="Two Chapters Studios OÜ provides high-quality photography, videography, and event coverage services. We capture memorable moments with creativity and precision.">
-			<meta name="keywords" content="Two Chapters Studios, media company, photography, videography, event coverage, video production, professional photography, media services, visual storytelling, best media company in Estonia, media company in Estonia, top media company in Estonia">
-			<meta name="author" content="Two Chapters Studios OÜ">
-			
-			<!-- Open Graph / Social Media Tags -->
-			<meta property="og:title" content="Two Chapters Studios OÜ &#8211; Professional Media Services">
-			<meta property="og:description" content="Explore premium photography, videography, and event coverage services at Two Chapters Studios. We bring your stories to life through our lens.">
-			<meta property="og:image" content="../assets/images/logo.png">
-			<meta property="og:url" content="https://twochapterstudios.com">
-			<meta property="og:type" content="website">
-			
-			<!-- Twitter Cards -->
-			<meta name="twitter:card" content="summary_large_image">
-			<meta name="twitter:title" content="Two Chapters Studios OÜ &#8211; Professional Media Services">
-			<meta name="twitter:description" content="Discover premium media services including photography, videography, and more. Contact us to make your vision a reality.">
-			<meta name="twitter:image" content="../assets/images/logo.png">
+	<!-- SEO Meta Tags -->
+	<meta name="description" content="Two Chapters Studios OÜ provides high-quality photography, videography, and event coverage services. We capture memorable moments with creativity and precision.">
+	<meta name="keywords" content="Two Chapters Studios, media company, photography, videography, event coverage, video production, professional photography, media services, visual storytelling, best media company in Estonia, media company in Estonia, top media company in Estonia">
+	<meta name="author" content="Two Chapters Studios OÜ">
+
+	<!-- Open Graph / Social Media Tags -->
+	<meta property="og:title" content="Two Chapters Studios OÜ &#8211; Professional Media Services">
+	<meta property="og:description" content="Explore premium photography, videography, and event coverage services at Two Chapters Studios. We bring your stories to life through our lens.">
+	<meta property="og:image" content="../assets/images/logo.png">
+	<meta property="og:url" content="https://twochapterstudios.com">
+	<meta property="og:type" content="website">
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Two Chapters Studios OÜ &#8211; Professional Media Services">
+	<meta name="twitter:description" content="Discover premium media services including photography, videography, and more. Contact us to make your vision a reality.">
+	<meta name="twitter:image" content="../assets/images/logo.png">
 
 <meta name='robots' content='max-image-preview:large'>
 <!-- <link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Feed" href="../feed/index.php">
@@ -820,11 +820,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 					<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="#">
+											<a href="../our-services">
 
 												<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-pin" viewbox="0 0 288 512" xmlns="http://www.w3.org/2000/svg"><path d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Direction</span>
+										<span class="elementor-icon-list-text">Services</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">

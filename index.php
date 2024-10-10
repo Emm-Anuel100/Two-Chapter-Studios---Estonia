@@ -228,11 +228,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 								</div><div class="elementor-element elementor-element-4b4f08f e-con-full e-flex e-con e-child" data-id="4b4f08f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 							<div class="elementor-element elementor-element-ccfecb8 elementor-widget elementor-widget-heading" data-id="ccfecb8" data-element_type="widget" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-						<h1 class="elementor-heading-title elementor-size-default crafting-txt">Two Chapter Studios</h1>		</div>
+						<!-- <h1 class="elementor-heading-title elementor-size-default crafting-txt">Two Chapter Studios</h1>		 -->
+					</div>
 							</div>
 							<div class="elementor-element elementor-element-c45cae8 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading" data-id="c45cae8" data-element_type="widget" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-					   	<h2 class="elementor-heading-title elementor-size-default">Immersive Storytelling</h2>		</div>
+							<h1 class="elementor-heading-title elementor-size-default">Two Chapter Studios</h1>
+					   	<!-- <h2 class="elementor-heading-title elementor-size-default">Immersive Storytelling</h2>	 -->
+							</div>
 							</div>
 							</div>
 					<div class="elementor-element elementor-element-43401e9 e-flex e-con-boxed e-con e-child" data-id="43401e9" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
@@ -245,7 +248,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-element elementor-element-03022f9 elementor-align-left elementor-widget__width-auto elementor-tablet-align-center elementor-widget elementor-widget-button" data-id="03022f9" data-element_type="widget" data-widget_type="button.default">
 							<div class="elementor-widget-container">
 								<div class="elementor-button-wrapper">
-						<a class="elementor-button elementor-button-link elementor-size-md" href="./our-services">
+						<a class="elementor-button elementor-button-link elementor-size-md" href="./our-work">
 									<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-icon elementor-align-icon-right">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewbox="0 0 19 7" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">    <g transform="matrix(1,0,0,1,-0.5,-0.500098)">        <path d="M19,3.5L1,3.5C0.724,3.5 0.5,3.724 0.5,4C0.5,4.276 0.724,4.5 1,4.5L19,4.5C19.276,4.5 19.5,4.276 19.5,4C19.5,3.724 19.276,3.5 19,3.5Z"></path>        <path d="M16.354,7.354L19.354,4.354C19.549,4.158 19.549,3.842 19.354,3.646L16.354,0.646C16.158,0.451 15.842,0.451 15.646,0.646C15.451,0.842 15.451,1.158 15.646,1.354L18.293,4C18.293,4 15.646,6.646 15.646,6.646C15.451,6.842 15.451,7.158 15.646,7.354C15.842,7.549 16.158,7.549 16.354,7.354Z"></path>    </g></svg>			</span>
@@ -700,11 +703,11 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 					<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="#">
+											<a href="./our-services">
 
 												<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-pin" viewbox="0 0 288 512" xmlns="http://www.w3.org/2000/svg"><path d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Direction</span>
+										<span class="elementor-icon-list-text">Services</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
