@@ -165,7 +165,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			</ul>
 			</li> -->
 			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="about" class="elementor-item">About</a></li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="blog" class="elementor-item">Blog</a></li>
+			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="blog" class="elementor-item">Blog</a></li> -->
 			<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item">Our Work</a>
 				<ul class="sub-menu elementor-nav-menu--dropdown">
 					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="./our-work" class="elementor-sub-item">Photography</a></li>
@@ -197,7 +197,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="./our-work/videography.php" class="elementor-sub-item">Videography</a></li>
 				</ul>
 				</li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="blog" class="elementor-item" tabindex="-1">Blog</a></li>
+			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="blog" class="elementor-item" tabindex="-1">Blog</a></li> -->
 			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="blog" class="elementor-item" tabindex="-1">Blog</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="2024/02/08/how-video-shapes-your-story" class="elementor-sub-item" tabindex="-1">Single Post</a></li>
@@ -228,13 +228,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 								</div><div class="elementor-element elementor-element-4b4f08f e-con-full e-flex e-con e-child" data-id="4b4f08f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 							<div class="elementor-element elementor-element-ccfecb8 elementor-widget elementor-widget-heading" data-id="ccfecb8" data-element_type="widget" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-						<!-- <h1 class="elementor-heading-title elementor-size-default crafting-txt">Two Chapter Studios</h1>		 -->
+						 <h1 class="elementor-heading-title elementor-size-default crafting-txt">Two Chapter Studios</h1>		 
 					</div>
 							</div>
 							<div class="elementor-element elementor-element-c45cae8 elementor-widget__width-initial elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading" data-id="c45cae8" data-element_type="widget" data-widget_type="heading.default">
 							<div class="elementor-widget-container">
-							<h1 class="elementor-heading-title elementor-size-default">Two Chapter Studios</h1>
-					   	<!-- <h2 class="elementor-heading-title elementor-size-default">Immersive Storytelling</h2>	 -->
+							<!-- <h1 class="elementor-heading-title elementor-size-default">Two Chapter Studios</h1> -->
+					       <h2 class="elementor-heading-title elementor-size-default">Immersive Storytelling</h2>	
 							</div>
 							</div>
 							</div>
@@ -243,7 +243,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-element elementor-element-8892421 elementor-widget__width-initial elementor-widget elementor-widget-text-editor" data-id="8892421" data-element_type="widget" data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
 						<style>/*! elementor - v3.18.0 - 20-12-2023 */
-			         .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p> Whether it&#8217;s a corporate promo, a product showcase, or a cinematic masterpiece, we have the expertise to make your story shine. Let&#8217;s collaborate and create something extraordinary together.</p>						</div>
+			         .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}
+						 @media (max-width: 800px){
+							.mobile-none{
+							display: none;
+						 }
+						 }
+						</style>			
+						
+						<p class="mobile-none"> Whether it&#8217;s a corporate promo, a product showcase, or a cinematic masterpiece, we have the expertise to make your story shine. Let&#8217;s collaborate and create something extraordinary together.</p>						</div>
 							</div>
 							<div class="elementor-element elementor-element-03022f9 elementor-align-left elementor-widget__width-auto elementor-tablet-align-center elementor-widget elementor-widget-button" data-id="03022f9" data-element_type="widget" data-widget_type="button.default">
 							<div class="elementor-widget-container">
@@ -369,7 +377,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-5445edb elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="5445edb" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<span class="elementor-heading-title elementor-size-default">01.</span>		</div>
+			<span class="elementor-heading-title elementor-size-default"> <img src="./assets/images/services/video-production.png" alt="video production icon"> </span>		</div>
 				</div>
 				<div class="elementor-element elementor-element-8b08dd6 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="8b08dd6" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -386,7 +394,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-d6db6ac elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="d6db6ac" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<span class="elementor-heading-title elementor-size-default">02.</span>		</div>
+			<span class="elementor-heading-title elementor-size-default"> <img src="./assets/images/services/photography.png" alt="photography icon"> </span>		</div>
 				</div>
 				<div class="elementor-element elementor-element-6f320aa elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="6f320aa" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -403,7 +411,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-7c4bba4 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="7c4bba4" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<span class="elementor-heading-title elementor-size-default">03.</span>		</div>
+			<span class="elementor-heading-title elementor-size-default"> <img src="./assets/images/services/post-production.png" alt="post production icon"> </span>		</div>
 				</div>
 				<div class="elementor-element elementor-element-1391684 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="1391684" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -432,16 +440,27 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="elementor-swiper">
 			<div class="elementor-main-swiper swiper">
 				<div class="swiper-wrapper">
-											<div class="swiper-slide">
-							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('storage/sites/77/2024/02/slice1.jpg')">
+
+				<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice8.jpg'); background-size: cover;">
+									<div class="elementor-carousel-image" role="img" aria-label="slice8">
+			
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>David Daudu</strong> <br/>
+ — Founder TCM, Director, Producer & Photographer			</div>
+									</div>
+
+									<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice4.jpg'); background-size: cover;">
+									<div class="elementor-carousel-image" role="img" aria-label="slice4">
 
 			
 					</div>
 					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
-				<strong>Oluwajoba Adekoya</strong>
-							— Makeup artist  			</div>
-			</a>						</div>
-			<!----->
+				<strong>Adeolu Samuel</strong>
+ — Photographer & Cinematograher</div>
+									</div>
+
+									<!----->
 			<div class="swiper-slide">
 							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('storage/sites/77/2024/02/capture.png')">
 
@@ -452,32 +471,36 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							— Photographer  			</div>
 			</a>						</div>
 			<!----->
-											<div class="swiper-slide">
-									<div class="elementor-carousel-image" role="img" aria-label="slice8" style="background-image: url('storage/sites/77/2024/02/slice8.jpg')">
 
-			
-					</div>
-					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
-				<strong>David Daudu</strong> <br/>
- — Founder TCM, Director, Producer & Photographer			</div>
-									</div>
-											<div class="swiper-slide">
-									<div class="elementor-carousel-image" role="img" aria-label="slice4" style="background-image: url('storage/sites/77/2024/02/slice4.jpg')">
-
-			
-					</div>
-					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
-				<strong>Adeolu Samuel</strong>
- — Photographer & Cinematograher</div>
-									</div>
-											<div class="swiper-slide">
-									<div class="elementor-carousel-image" role="img" aria-label="slice5" style="background-image: url('storage/sites/77/2024/02/slice5.jpg')">
+			<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice5.jpg'); background-size: cover;">
+									<div class="elementor-carousel-image" role="img" aria-label="slice5">
 
 			
 					</div>
 					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
 				<strong>Reece Mladjov </strong>
  — Cinematograher			</div>
+									</div>
+
+
+											<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice1.jpg')">
+							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1">
+
+			
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>Oluwajoba Adekoya</strong>
+							— Makeup artist  			</div>
+			</a>						</div>
+		
+
+				<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice7.jpg'); background-size: cover;">
+				<div class="elementor-carousel-image" role="img" aria-label="slice5">
+
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>Rachel Ikujuni Dawodu</strong>
+ — Event Planner & Decorator		</div>
 									</div>
 									</div>
 										</div>
@@ -487,11 +510,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</div>
 				</div>
 
-		<div class="elementor-element elementor-element-254c28f e-flex e-con-boxed e-con e-parent" data-id="254c28f" data-element_type="container">
-					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-db205f4 elementor-widget__width-auto elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading" data-id="db205f4" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<span class="elementor-heading-title elementor-size-default">“</span>		</div>
+
+		<!-- Review section -->
+		<div style="width: 100%; padding: 0 5%; margin: 20px 0">
+		 <div style="background: #d7d3d3; border-radius: 10px;" class="elementor-element elementor-element-254c28f e-flex e-con-boxed e-con e-parent" data-id="254c28f" data-element_type="container">
+		  <div class="e-con-inner">
+			<div class="elementor-element elementor-element-db205f4 elementor-widget__width-auto elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading" data-id="db205f4" data-element_type="widget" data-widget_type="heading.default">
+			<div class="elementor-widget-container">
+		<span class="elementor-heading-title elementor-size-default">“</span>		</div>
 				</div>
 		<div class="elementor-element elementor-element-4e8a2f6 e-flex e-con-boxed e-con e-child" data-id="4e8a2f6" data-element_type="container">
 					<div class="e-con-inner">
@@ -499,6 +525,30 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			<div class="elementor-heading-title elementor-size-default">I had a fantastic experience with Two Chapter Studio Photography. The team and lead David was professional, attentive, and made the entire process smooth and enjoyable. The photos turned out stunning, capturing every detail beautifully. Highly recommend for anyone looking for top-notch photography services!</div>		</div>
 				</div>
+			  <!-- Star ratings -->
+				<div class="star-rating" style="display: flex; gap: 5px">
+					<div>
+						<img src="./assets/images/star-rating.png" alt="star rating">
+						<img src="./assets/images/star-rating.png" alt="star rating">
+						<img src="./assets/images/star-rating.png" alt="star rating">
+						<img src="./assets/images/star-rating.png" alt="star rating">
+						<img src="./assets/images/star-rating.png" alt="star rating">
+				   </div>
+				</div> 
+			  <!--/ Star ratings -->
+
+			  <style>
+				 div.star-rating{
+					width: 100%;
+					display: flex;
+					justify-content: left;
+
+					@media (max-width: 700px){
+					justify-content: center;
+				 }
+				 }
+			  </style>
+
 				<div class="elementor-element elementor-element-8ee1ecf elementor-widget elementor-widget-heading" data-id="8ee1ecf" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<div class="elementor-heading-title elementor-size-default">Meranda Benedicta</div>		</div>
@@ -511,6 +561,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</div>
 					</div>
 				</div>
+				 </div>
+				 <!--/ Review section -->
+
+
 		<div class="elementor-element elementor-element-5eaa44c e-flex e-con-boxed e-con e-parent" data-id="5eaa44c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/flex.darrelwilson.com\/cinemagic\/storage\/sites\/77\/2024\/02\/teamwork-in-creative-video-production-company-woma-2023-11-27-05-05-45-utc1.mp4&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-background-video-container">

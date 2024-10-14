@@ -1,5 +1,4 @@
 ﻿<?php
-
 // If not using Composer, include PHPMailer manually:
 require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
@@ -20,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'])) {
     try {
         //Server settings
         $mail->SMTPDebug = 0;  // Set to 0 to disable debug output
-        $mail->isSMTP(); // TwoChapterStudio
+        $mail->isSMTP(); 
         $mail->Host = 'mail.mediatrakltd.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;          // Enable SMTP authentication
         $mail->Username = 'twochapterstudio@mediatrakltd.com'; // SMTP username
@@ -232,7 +231,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
 </ul>
 </li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item">Blog</a></li>
+
+<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item">Blog</a></li> -->
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2175 current_page_item menu-item-2676"><a href="index.php" aria-current="page" class="elementor-item elementor-item-active">Contact</a></li>
 </ul>			</nav>
 					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
@@ -258,7 +258,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item" tabindex="-1">Single Post</a></li>
 </ul>
 </li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a></li>
+
+<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a></li> -->
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2175 current_page_item menu-item-2676"><a href="index.php" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Contact</a></li>
 </ul>			</nav>
 				</div>
@@ -336,7 +337,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<li class="elementor-icon-list-item">
 									<a href="#">
 
-									<span class="elementor-icon-list-text">+372 5900 4186</span>
+									<span class="elementor-icon-list-text">+37253717219</span>
 									</a>
 							</li>
 						</ul>

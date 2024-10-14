@@ -169,7 +169,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
 	</ul>
 	</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../blog/index.php" aria-current="page" class="elementor-item">Blog</a></li>
+
+<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../blog/index.php" aria-current="page" class="elementor-item">Blog</a></li> -->
 <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item">Blog</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
 	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
@@ -195,7 +196,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
 	</ul>
 	</li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../blog/index.php" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Blog</a></li>
+<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1416 current_page_item menu-item-2679"><a href="../blog/index.php" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Blog</a></li> -->
 <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
 	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item" tabindex="-1">Single Post</a></li>

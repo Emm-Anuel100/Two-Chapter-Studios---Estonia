@@ -158,7 +158,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
 				</ul>
 				</li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item">Blog</a></li>
+
+			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item">Blog</a></li> -->
 			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item">Blog</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
@@ -184,7 +185,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
 				</ul>
 				</li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a></li>
+
+			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a></li> -->
 			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item" tabindex="-1">Single Post</a></li>
@@ -419,7 +421,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			<div class="elementor-main-swiper swiper">
 				<div class="swiper-wrapper">
 								<div class="swiper-slide">
-							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice1.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 					</div>
 					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
@@ -428,7 +430,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			</a>						</div>
 			<!----->
 			<div class="swiper-slide">
-							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/capture.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/capture.png'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
@@ -438,7 +440,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			</a>						</div>
 			<!----->
 											<div class="swiper-slide">
-											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice8.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice8.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
@@ -447,7 +449,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
  — Founder TCM, Director, Producer & Photographer			</div>
 									</div>
 											<div class="swiper-slide">
-											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice4.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice4.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
@@ -456,13 +458,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
  — Photographer & Cinematograher</div>
 									</div>
 											<div class="swiper-slide">
-									<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice5.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+									<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice5.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
 					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
 				<strong>Reece Mladjov </strong>
  — Cinematograher			</div>
+									</div>
+
+									<div class="swiper-slide">
+				<div class="elementor-carousel-image" role="img" aria-label="slice5"  style="background-image: url('../storage/sites/77/2024/02/slice7.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
+
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>Rachel Ikujuni Dawodu</strong>
+ — Event Planner & Decorator		</div>
 									</div>
 									</div>
 										</div>
