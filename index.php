@@ -443,6 +443,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</div>
 				</div>
 				</div>
+
 		<div class="elementor-element elementor-element-8270a17 e-flex e-con-boxed e-con e-parent" data-id="8270a17" data-element_type="container">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-d0ff940 elementor-widget elementor-widget-heading" data-id="d0ff940" data-element_type="widget" data-widget_type="heading.default">
@@ -457,28 +458,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 					<div class="elementor-swiper">
 			<div class="elementor-main-swiper swiper">
-				<div class="swiper-wrapper">
+			<div class="swiper-wrapper">
+								<div class="swiper-slide">
+							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('./storage/sites/77/2024/02/slice1.jpg');  background-size: contain; background-position-y: -10px; background-repeat: no-repeat; height: 100rem; width: 30rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
-				<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice8.jpg'); background-size: cover;">
-									<div class="elementor-carousel-image" role="img" aria-label="slice8">
-			
 					</div>
 					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
-				<strong>David Daudu</strong> <br/>
- — Founder TCM, Director, Producer & Photographer			</div>
-									</div>
-
-									<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice4.jpg'); background-size: cover;">
-									<div class="elementor-carousel-image" role="img" aria-label="slice4">
-
-			
-					</div>
-					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
-				<strong>Adeolu Samuel</strong>
- — Photographer & Cinematograher</div>
-									</div>
-
-									<!----->
+				<strong>Oluwajoba Adekoya</strong>
+							— Makeup artist  			</div>
+			</a>						</div>
+												<!----->
 			<div class="swiper-slide">
 							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('storage/sites/77/2024/02/capture.png')">
 
@@ -489,9 +478,26 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							— Photographer  			</div>
 			</a>						</div>
 			<!----->
+											<div class="swiper-slide">
+											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('./storage/sites/77/2024/02/slice8.jpg'); background-size: contain; background-position-y: -10px; background-repeat: no-repeat; height: 100rem; width: 30rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
-			<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice5.jpg'); background-size: cover;">
-									<div class="elementor-carousel-image" role="img" aria-label="slice5">
+			
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>David Daudu</strong> <br/>
+ — Founder TCM, Director, Producer & Photographer			</div>
+									</div>
+											<div class="swiper-slide">
+											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('./storage/sites/77/2024/02/slice4.jpg');  background-size: contain; background-position-y: -10px; background-repeat: no-repeat; height: 100rem; width: 30rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
+
+			
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>Adeolu Samuel</strong>
+ — Photographer & Cinematograher</div>
+									</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('./storage/sites/77/2024/02/slice5.jpg');  background-size: contain; background-position-y: -40px; background-repeat: no-repeat; height: 100rem; width: 30rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
@@ -500,20 +506,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
  — Cinematograher			</div>
 									</div>
 
-
-											<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice1.jpg')">
-							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1">
-
-			
-					</div>
-					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">			
-				<strong>Oluwajoba Adekoya</strong>
-							— Makeup artist  			</div>
-			</a>						</div>
-		
-
-				<div class="swiper-slide" style="background-image: url('storage/sites/77/2024/02/slice7.jpg'); background-size: cover;">
-				<div class="elementor-carousel-image" role="img" aria-label="slice5">
+									<div class="swiper-slide">
+				<div class="elementor-carousel-image" role="img" aria-label="slice5"  style="background-image: url('./storage/sites/77/2024/02/slice7.jpg'); background-size: contain; background-position-y: -10px; background-repeat: no-repeat; height: 100rem; width: 30rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 					</div>
 					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
