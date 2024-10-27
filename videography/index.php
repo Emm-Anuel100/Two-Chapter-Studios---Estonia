@@ -259,17 +259,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 			<h2 class="elementor-heading-title elementor-size-default">Whether it’s a music video that pops up or a corporate shoot that impresses you, we’ve got you covered. Dive into our videos and see how we bring stories to life, one frame at a time.</h2>		</div>
 				</div>
-
 				</div>
 
            <!-- Video production list -->   
-		        <section style="width: 100%; display: flex; gap: 2rem; justify-content: center; padding: 0 2%;">
-                 <div style="width: 100%">
+		        <section style="width: 100%; display: block; gap: 2rem; justify-content: center; padding: 0 2%;">
+                 <div style="width: 100%; margin-bottom: 1.5rem;">
                   <!-- <img loading="lazy" src="../storage/sites/77/2024/02/1T3A1246-Edit.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">                 -->
 				  <iframe width="100" height="523" src="https://www.youtube.com/embed/a-cADVf6xYk" title="International Women&#39;s Day 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                  </div>
 
-                 <div style="width: 100%">
+                 <div style="width: 100%;  margin-bottom: 1.5rem;">
                   <!-- <img loading="lazy" src="../storage/sites/77/2024/02/1T3A9983 copy.jpg" alt="video-img" style="width: 100%; height: 27rem; border-radius: .4rem; object-fit: cover;">                 -->
 						<iframe width="100" height="523" src="https://www.youtube.com/embed/IVdgq-vo_8s" title="Scott Giri - Semilese" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                  </div>
