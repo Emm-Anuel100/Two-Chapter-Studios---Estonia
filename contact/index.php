@@ -109,8 +109,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'])) {
 	<meta name="twitter:image" content="../assets/images/logo.png">
 
 <meta name='robots' content='max-image-preview:large'>
-<!-- <link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Feed" href="../feed/index.php">
-<link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Comments Feed" href="../comments/feed/index.php"> -->
+<!-- <link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Feed" href="../feed">
+<link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Comments Feed" href="../comments/feed"> -->
 <!-- <script>
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/flex.darrelwilson.com\/cinemagic\/lib\/js\/wp-emoji-release.min.js"}};
 /*! This file is auto-generated */
@@ -167,10 +167,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='google-fonts-1-css' href='../../css?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CJetBrains+Mono%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap' media='all'>
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="../lib/js/jquery/jquery.min.js" id="jquery-core-js"></script>
 <script src="../lib/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-<link rel="canonical" href="index.php">
+<!-- <link rel="canonical" href="index.php">
 <link rel='shortlink' href='index.php?p=2175'>
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-20?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2Fcontact%2F">
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-21?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2Fcontact%2F&#038;format=xml">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-21?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2Fcontact%2F&#038;format=xml"> -->
 
 			<style>
 				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
@@ -203,7 +203,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		<div class="elementor-element elementor-element-6af7a71 e-con-full e-flex e-con e-child" data-id="6af7a71" data-element_type="container">
 				<div class="elementor-element elementor-element-3f077ed elementor-widget__width-auto elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="3f077ed" data-element_type="widget" data-widget_type="theme-site-logo.default">
 				<div class="elementor-widget-container">
-									<a href="../index.php">
+									<a href="https://twochapterstudios.com/">
 			<img loading="lazy" width="413" height="91" style="width: 60px !important" src="../assets/images/logo-white.png" class="attachment-full size-full wp-image-100" alt="" srcset="../assets/images/logo-white.png 413w, ../assets/images/logo-white.png 300w" sizes="(max-width: 413px) 100vw, 413px">				</a>
 			</div>
 				</div>
@@ -212,45 +212,45 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-element elementor-element-09a8be5 elementor-nav-menu--stretch elementor-widget__width-auto elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="09a8be5" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;fa-svg-chevron-down e-font-icon-svg e-fas-chevron-down\&quot; viewBox=\&quot;0 0 448 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
 				<div class="elementor-widget-container">
 						<nav aria-label="Menu" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-drop-out">
-				<ul id="menu-1-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="../index.php" class="elementor-item">Home</a></li>
+				<ul id="menu-1-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="https://twochapterstudios.com/" class="elementor-item">Home</a></li>
 <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14"><a href="#" class="elementor-item elementor-item-anchor">Pages</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="../about/index.php" class="elementor-sub-item">About</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2680"><a href="../our-services/index.php" class="elementor-sub-item">Our Services</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="../about" class="elementor-sub-item">About</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2680"><a href="../our-services" class="elementor-sub-item">Our Services</a></li>
 </ul>
 </li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about" class="elementor-item">About Us</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item">Our Work</a>
 	<ul class="sub-menu elementor-nav-menu--dropdown">
-		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work" class="elementor-sub-item">Photography</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../videography" class="elementor-sub-item">Videography</a></li>
    </ul>
 </li>
-<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item">Blog</a>
+<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog" class="elementor-item">Blog</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story" class="elementor-sub-item">Single Post</a></li>
 </ul>
 </li> -->
 
 <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item">Blog</a></li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2175 current_page_item menu-item-2676"><a href="index.php" aria-current="page" class="elementor-item elementor-item-active">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2175 current_page_item menu-item-2676"><a href="./" aria-current="page" class="elementor-item elementor-item-active">Contact</a></li>
 </ul>			</nav>
 					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
 			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			<span class="elementor-screen-only">Menu</span>
 		</div>
 					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
-				<ul id="menu-2-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="../index.php" class="elementor-item" tabindex="-1">Home</a></li>
+				<ul id="menu-2-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="https://twochapterstudios.com/" class="elementor-item" tabindex="-1">Home</a></li>
 <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Pages</a>
 <ul class="sub-menu elementor-nav-menu--dropdown">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="../about/index.php" class="elementor-sub-item" tabindex="-1">About</a></li>
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2680"><a href="../our-services/index.php" class="elementor-sub-item" tabindex="-1">Our Services</a></li>
 </ul>
 </li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item" tabindex="-1">About Us</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about" class="elementor-item" tabindex="-1">About Us</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item elementor-item-active">Our Work</a>
 	<ul class="sub-menu elementor-nav-menu--dropdown">
-		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
-		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work" class="elementor-sub-item">Photography</a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../videography" class="elementor-sub-item">Videography</a></li>
 	</ul>
 	</li>
 <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a>
@@ -260,7 +260,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 </li> -->
 
 <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a></li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2175 current_page_item menu-item-2676"><a href="index.php" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2175 current_page_item menu-item-2676"><a href="./" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Contact</a></li>
 </ul>			</nav>
 				</div>
 				</div>
@@ -660,7 +660,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 		<div class="elementor-element elementor-element-16dcaf6 e-con-full e-flex e-con e-child" data-id="16dcaf6" data-element_type="container">
 				<div class="elementor-element elementor-element-07a9578 elementor-widget elementor-widget-image" data-id="07a9578" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-														<a href="../index.php">
+														<a href="https://twochapterstudios.com/">
 							<img loading="lazy" width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px">								</a>
 							</div>
 				</div>
@@ -687,25 +687,25 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-widget-container">
 					<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="../index.php">
+											<a href="https://twochapterstudios.com/">
 
 											<span class="elementor-icon-list-text">Home</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="../about/index.php">
+											<a href="../about">
 
 											<span class="elementor-icon-list-text">About</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="../our-work/index.php">
+											<a href="../our-work">
 
 											<span class="elementor-icon-list-text">Our work</span>
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="../contact/index.php">
+											<a href="../contact">
 
 											<span class="elementor-icon-list-text">Contact</span>
 											</a>
@@ -829,7 +829,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 											</a>
 									</li>
 								<li class="elementor-icon-list-item elementor-inline-item">
-											<a href="./index.php">
+											<a href="./">
 
 												<span class="elementor-icon-list-icon">
 							<svg aria-hidden="true" class="e-font-icon-svg e-fas-comments" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path></svg>						</span>

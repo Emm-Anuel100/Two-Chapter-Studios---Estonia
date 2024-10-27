@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
@@ -23,7 +23,7 @@
 	<meta name="twitter:title" content="Two Chapters Studios OÜ &#8211; Professional Media Services">
 	<meta name="twitter:description" content="Discover premium media services including photography, videography, and more. Contact us to make your vision a reality.">
 	<meta name="twitter:image" content="./assets/images/logo.png">
-
+    
 <meta name='robots' content='max-image-preview:large'>
 <!-- <link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Feed" href="feed">
 <link rel="alternate" type="application/rss+xml" title="Cinemagic &raquo; Comments Feed" href="comments/feed"> -->
@@ -82,8 +82,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='google-fonts-1-css' href='../css?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CJetBrains+Mono%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap' media='all'>
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="lib/js/jquery/jquery.min.js" id="jquery-core-js"></script>
 <script src="lib/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-<link rel="canonical" href="index.php">
-<link rel='shortlink' href='index.php'>
+<!-- <link rel="canonical" href="index.php">
+<link rel='shortlink' href='index.php'> -->
 
 <!-- <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2F">
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="wp-json/oembed/1.0/embed-1?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2F&#038;format=xml"> -->
@@ -169,7 +169,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item">Our Work</a>
 				<ul class="sub-menu elementor-nav-menu--dropdown">
 					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="./our-work" class="elementor-sub-item">Photography</a></li>
-					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="./our-work/videography.php" class="elementor-sub-item">Videography</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="./videography" class="elementor-sub-item">Videography</a></li>
 				</ul>
 				</li>
 			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="blog" class="elementor-item">Blog</a>
@@ -183,7 +183,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 						<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			<span class="elementor-screen-only">Menu</span>
 					</div>
 								<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
-							<ul id="menu-2-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-390 current_page_item menu-item-2720"><a href="index.php" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
+							<ul id="menu-2-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-390 current_page_item menu-item-2720"><a href="https://twochapterstudios.com/" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
 			<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Pages</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2681"><a href="about" class="elementor-sub-item" tabindex="-1">About</a></li>
@@ -317,6 +317,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</div> -->
 					</div>
 		</a>						</div>
+		<div class="swiper-slide">
+			<a href="storage/sites/77/2024/02/newpic-1.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="31652ff" data-elementor-lightbox-title="Love" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTQ5LCJ1cmwiOiJodHRwczpcL1wvZmxleC5kYXJyZWx3aWxzb24uY29tXC9jaW5lbWFnaWNcL3dwLWNvbnRlbnRcL3VwbG9hZHNcL3NpdGVzXC83N1wvMjAyNFwvMDJcL2Z1dHVyaXN0aWMtYWZyby1tYW4tYWRqdXN0aW5nLWFuLWF1Z21lbnRlZC1yZWFsaXR5LTIwMjMtMTEtMjctMDUtMDItMDgtdXRjLTEuanBnIiwic2xpZGVzaG93IjoiMzE2NTJmZiJ9">		<div class="elementor-carousel-image" role="img" aria-label="Love" style="background-image: url('storage/sites/77/2024/02/newpic-1.jpg')">
+
+
+			<!-- <div class="elementor-custom-embed-play">
+	<svg aria-hidden="true" class="e-font-icon-svg e-eicon-play" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M838 162C746 71 633 25 500 25 371 25 258 71 163 162 71 254 25 367 25 500 25 633 71 746 163 837 254 929 367 979 500 979 633 979 746 933 838 837 929 746 975 633 975 500 975 367 929 254 838 162M808 192C892 279 933 379 933 500 933 621 892 725 808 808 725 892 621 938 500 938 379 938 279 896 196 808 113 725 67 621 67 500 67 379 108 279 196 192 279 108 383 62 500 62 621 62 721 108 808 192M438 392V642L642 517 438 392Z"></path></svg>					<span class="elementor-screen-only">Play</span>
+</div> -->
+	</div>
+</a>						</div>
 											<div class="swiper-slide">
 							<a href="storage/sites/77/2024/02/love.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="31652ff" data-elementor-lightbox-title="Love Picture" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTM3LCJ1cmwiOiJodHRwczpcL1wvZmxleC5kYXJyZWx3aWxzb24uY29tXC9jaW5lbWFnaWNcL3dwLWNvbnRlbnRcL3VwbG9hZHNcL3NpdGVzXC83N1wvMjAyNFwvMDJcL2ZhY2Utb2lsLW9uLXNlcXVpbi1iYWNrZ3JvdW5kLTIwMjMtMTEtMjctMDUtMjItNDQtdXRjLmpwZyIsInNsaWRlc2hvdyI6IjMxNjUyZmYifQ%3D%3D">		<div class="elementor-carousel-image" role="img" aria-label="Love Picture" style="background-image: url('storage/sites/77/2024/02/love.jpg')">
 
@@ -326,6 +335,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				</div> -->
 					</div>
 		</a>						</div>
+		<div class="swiper-slide">
+			<a href="storage/sites/77/2024/02/newpic-4.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="31652ff" data-elementor-lightbox-title="Love" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTQ5LCJ1cmwiOiJodHRwczpcL1wvZmxleC5kYXJyZWx3aWxzb24uY29tXC9jaW5lbWFnaWNcL3dwLWNvbnRlbnRcL3VwbG9hZHNcL3NpdGVzXC83N1wvMjAyNFwvMDJcL2Z1dHVyaXN0aWMtYWZyby1tYW4tYWRqdXN0aW5nLWFuLWF1Z21lbnRlZC1yZWFsaXR5LTIwMjMtMTEtMjctMDUtMDItMDgtdXRjLTEuanBnIiwic2xpZGVzaG93IjoiMzE2NTJmZiJ9">		<div class="elementor-carousel-image" role="img" aria-label="Love" style="background-image: url('storage/sites/77/2024/02/newpic-4.jpg')">
+
+
+			<!-- <div class="elementor-custom-embed-play">
+	<svg aria-hidden="true" class="e-font-icon-svg e-eicon-play" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M838 162C746 71 633 25 500 25 371 25 258 71 163 162 71 254 25 367 25 500 25 633 71 746 163 837 254 929 367 979 500 979 633 979 746 933 838 837 929 746 975 633 975 500 975 367 929 254 838 162M808 192C892 279 933 379 933 500 933 621 892 725 808 808 725 892 621 938 500 938 379 938 279 896 196 808 113 725 67 621 67 500 67 379 108 279 196 192 279 108 383 62 500 62 621 62 721 108 808 192M438 392V642L642 517 438 392Z"></path></svg>					<span class="elementor-screen-only">Play</span>
+</div> -->
+	</div>
+</a>						</div>
 											<div class="swiper-slide">
 							<a href="storage/sites/77/2024/02/IMG_6986.jpg" data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="31652ff" data-elementor-lightbox-title="Image Beauty" data-e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6MTM0LCJ1cmwiOiJodHRwczpcL1wvZmxleC5kYXJyZWx3aWxzb24uY29tXC9jaW5lbWFnaWNcL3dwLWNvbnRlbnRcL3VwbG9hZHNcL3NpdGVzXC83N1wvMjAyNFwvMDJcL2JsYWNrLWZlbWFsZS1oYW5kLWhvbGQtaGVhZHBob25lcy1vbi1vcmFuZ2UtYmFja2dyLTIwMjMtMTEtMjctMDUtMjAtNDYtdXRjLmpwZyIsInNsaWRlc2hvdyI6IjMxNjUyZmYifQ%3D%3D">		<div class="elementor-carousel-image" role="img" aria-label="Image Beauty" style="background-image: url('storage/sites/77/2024/02/IMG_6986.jpg')">
 
@@ -361,7 +379,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="elementor-element elementor-element-e1131c2 elementor-align-right elementor-widget__width-initial elementor-tablet-align-left elementor-widget-tablet__width-inherit elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="e1131c2" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-button-wrapper">
-			<a class="elementor-button elementor-button-link elementor-size-sm" href="./our-services">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="./contact">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewbox="0 0 19 7" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">    <g transform="matrix(1,0,0,1,-0.5,-0.500098)">        <path d="M19,3.5L1,3.5C0.724,3.5 0.5,3.724 0.5,4C0.5,4.276 0.724,4.5 1,4.5L19,4.5C19.276,4.5 19.5,4.276 19.5,4C19.5,3.724 19.276,3.5 19,3.5Z"></path>        <path d="M16.354,7.354L19.354,4.354C19.549,4.158 19.549,3.842 19.354,3.646L16.354,0.646C16.158,0.451 15.842,0.451 15.646,0.646C15.451,0.842 15.451,1.158 15.646,1.354L18.293,4C18.293,4 15.646,6.646 15.646,6.646C15.451,6.842 15.451,7.158 15.646,7.354C15.842,7.549 16.158,7.549 16.354,7.354Z"></path>    </g></svg>			</span>
@@ -488,7 +506,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 			
 					</div>
-					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">			
 				<strong>Oluwajoba Adekoya</strong>
 							— Makeup artist  			</div>
 			</a>						</div>
@@ -512,8 +530,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 
 		<!-- Review section -->
-		<div style="width: 100%; padding: 0 5%; margin: 20px 0">
-		 <div style="background: #d7d3d3; border-radius: 10px;" class="elementor-element elementor-element-254c28f e-flex e-con-boxed e-con e-parent" data-id="254c28f" data-element_type="container">
+		<div style="width: 100%; padding: 0 2%; margin: 20px 0">
+		 <div style="background: #d7d3d3; border-radius: 10px; padding: 0 5%;" class="elementor-element elementor-element-254c28f e-flex e-con-boxed e-con e-parent" data-id="254c28f" data-element_type="container">
 		  <div class="e-con-inner">
 			<div class="elementor-element elementor-element-db205f4 elementor-widget__width-auto elementor-widget-tablet__width-inherit elementor-widget elementor-widget-heading" data-id="db205f4" data-element_type="widget" data-widget_type="heading.default">
 			<div class="elementor-widget-container">
