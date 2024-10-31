@@ -76,8 +76,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel='stylesheet' id='google-fonts-1-css' href='../../css?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CJetBrains+Mono%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap' media='all'>
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script src="../lib/js/jquery/jquery.min.js" id="jquery-core-js"></script>
 <script src="../lib/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-<link rel="canonical" href="index.php">
-<link rel='shortlink' href='index.php?p=501'>
+<!-- <link rel="canonical" href="index.php">
+<link rel='shortlink' href='index.php?p=501'> -->
 <!-- <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../wp-json/oembed/1.0/embed-2?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2Fabout%2F">
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed-3?url=https%3A%2F%2Fflex.darrelwilson.com%2Fcinemagic%2Fabout%2F&#038;format=xml"> -->
 
@@ -145,7 +145,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-widget-container">
 						<link rel="stylesheet" href="../modules/ccc473c329/assets/css/widget-nav-menu.min.css">			<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-drop-out">
 							<ul id="menu-1-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="../index.php" class="elementor-item">Home</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item elementor-item-active">About</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about" class="elementor-item elementor-item-active">About</a></li>
 			<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-14"><a href="#" class="elementor-item elementor-item-anchor">Pages</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-501 current_page_item menu-item-2681"><a href="index.php" aria-current="page" class="elementor-sub-item elementor-item-active">About</a></li>
@@ -154,24 +154,25 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			</li> -->
 			<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item">Our Work</a>
 				<ul class="sub-menu elementor-nav-menu--dropdown">
-					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
-					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work" class="elementor-sub-item">Photography</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../videography" class="elementor-sub-item">Videography</a></li>
 				</ul>
 				</li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item">Blog</a></li>
+
+			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item">Blog</a></li> -->
 			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item">Blog</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item">Single Post</a></li>
 			</ul>
 			</li> -->
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="../contact/index.php" class="elementor-item">Contact</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="../contact" class="elementor-item">Contact</a></li>
 			</ul>			</nav>
 								<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
 						<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>			<span class="elementor-screen-only">Menu</span>
-					</div>
+					    </div>
 								<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
-							<ul id="menu-2-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="../index.php" class="elementor-item" tabindex="-1">Home</a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about/index.php" class="elementor-item" tabindex="-1">About</a></li>
+							<ul id="menu-2-09a8be5" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2720"><a href="https://twochapterstudios.com/" class="elementor-item" tabindex="-1">Home</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../about" class="elementor-item" tabindex="-1">About</a></li>
 			<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-14"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Pages</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-501 current_page_item menu-item-2681"><a href="index.php" aria-current="page" class="elementor-sub-item elementor-item-active" tabindex="-1">About</a></li>
@@ -180,17 +181,18 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			</li> -->
 			<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2194 current_page_item menu-item-has-children menu-item-2675"><a href="javascript:void();" aria-current="page" class="elementor-item elementor-item-active">Our Work</a>
 				<ul class="sub-menu elementor-nav-menu--dropdown">
-					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/index.php" class="elementor-sub-item">Photography</a></li>
-					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work/videography.php" class="elementor-sub-item">Videography</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../our-work" class="elementor-sub-item">Photography</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../videography" class="elementor-sub-item">Videography</a></li>
 				</ul>
 				</li>
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a></li>
+
+			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2679"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a></li> -->
 			<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2675"><a href="../blog/index.php" class="elementor-item" tabindex="-1">Blog</a>
 			<ul class="sub-menu elementor-nav-menu--dropdown">
 				<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2683"><a href="../2024/02/08/how-video-shapes-your-story/index.php" class="elementor-sub-item" tabindex="-1">Single Post</a></li>
 			</ul>
 			</li> -->
-			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="../contact/index.php" class="elementor-item" tabindex="-1">Contact</a></li>
+			<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="../contact" class="elementor-item" tabindex="-1">Contact</a></li>
 			</ul>			</nav>
 							</div>
 							</div>
@@ -419,7 +421,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			<div class="elementor-main-swiper swiper">
 				<div class="swiper-wrapper">
 								<div class="swiper-slide">
-							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice1.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 					</div>
 					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
@@ -428,7 +430,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			</a>						</div>
 			<!----->
 			<div class="swiper-slide">
-							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/capture.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+							<a href="javascript:void();">		<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/capture.png'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
@@ -438,7 +440,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 			</a>						</div>
 			<!----->
 											<div class="swiper-slide">
-											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice8.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice8.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
@@ -447,7 +449,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
  — Founder TCM, Director, Producer & Photographer			</div>
 									</div>
 											<div class="swiper-slide">
-											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice4.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+											<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice4.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
@@ -456,13 +458,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
  — Photographer & Cinematograher</div>
 									</div>
 											<div class="swiper-slide">
-									<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice5.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: #eaeaea; margin-bottom: 1rem; border-radius: .3rem">
+									<div class="elementor-carousel-image" role="img" aria-label="slice1" style="background-image: url('../storage/sites/77/2024/02/slice5.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
 
 			
 					</div>
 					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
 				<strong>Reece Mladjov </strong>
  — Cinematograher			</div>
+									</div>
+
+									<div class="swiper-slide">
+				<div class="elementor-carousel-image" role="img" aria-label="slice5"  style="background-image: url('../storage/sites/77/2024/02/slice7.jpg'); background-size: cover; background-position-y: 10px; background-repeat: no-repeat; height: 27rem; width: 26rem; background-color: transparent; margin-bottom: 1rem; border-radius: .3rem">
+
+					</div>
+					<div class="elementor-carousel-image-overlay e-overlay-animation-zoom-in">
+				<strong>Rachel Ikujuni Dawodu</strong>
+ — Event Planner & Decorator		</div>
 									</div>
 									</div>
 										</div>
@@ -741,7 +752,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-element elementor-element-0b17731 elementor-align-right elementor-widget__width-inherit elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="0b17731" data-element_type="widget" data-widget_type="button.default">
 							<div class="elementor-widget-container">
 								<div class="elementor-button-wrapper">
-						<a class="elementor-button elementor-button-link elementor-size-md" href="../contact/index.php">
+						<a class="elementor-button elementor-button-link elementor-size-md" href="../contact">
 									<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-icon elementor-align-icon-right">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewbox="0 0 19 7" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">    <g transform="matrix(1,0,0,1,-0.5,-0.500098)">        <path d="M19,3.5L1,3.5C0.724,3.5 0.5,3.724 0.5,4C0.5,4.276 0.724,4.5 1,4.5L19,4.5C19.276,4.5 19.5,4.276 19.5,4C19.5,3.724 19.276,3.5 19,3.5Z"></path>        <path d="M16.354,7.354L19.354,4.354C19.549,4.158 19.549,3.842 19.354,3.646L16.354,0.646C16.158,0.451 15.842,0.451 15.646,0.646C15.451,0.842 15.451,1.158 15.646,1.354L18.293,4C18.293,4 15.646,6.646 15.646,6.646C15.451,6.842 15.451,7.158 15.646,7.354C15.842,7.549 16.158,7.549 16.354,7.354Z"></path>    </g></svg>			</span>
@@ -761,7 +772,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					<div class="elementor-element elementor-element-16dcaf6 e-con-full e-flex e-con e-child" data-id="16dcaf6" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 							<div class="elementor-element elementor-element-07a9578 elementor-widget elementor-widget-image" data-id="07a9578" data-element_type="widget" data-widget_type="image.default">
 							<div class="elementor-widget-container">
-																			<a href="../index.php">
+																			<a href="https://twochapterstudios.com/">
 										<img width="413" height="91" src="../assets/images/logo-dark.png" class="attachment-large size-large wp-image-438" alt="" srcset="../assets/images/logo-dark.png 413w, ../assets/images/logo-dark.png 300w" sizes="(max-width: 413px) 100vw, 413px" loading="lazy">								</a>
 																		</div>
 							</div>
@@ -788,25 +799,25 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-widget-container">
 						<link rel="stylesheet" href="../modules/f65f29574d/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items elementor-inline-items">
 										<li class="elementor-icon-list-item elementor-inline-item">
-														<a href="../index.php">
+														<a href="https://twochapterstudios.com/">
 			
 														<span class="elementor-icon-list-text">Home</span>
 														</a>
 												</li>
 											<li class="elementor-icon-list-item elementor-inline-item">
-														<a href="../about/index.php">
+														<a href="../about">
 			
 														<span class="elementor-icon-list-text">About</span>
 														</a>
 												</li>
 											<li class="elementor-icon-list-item elementor-inline-item">
-														<a href="../our-work/index.php">
+														<a href="../our-work">
 			
 														<span class="elementor-icon-list-text">Our work</span>
 														</a>
 												</li>
 											<li class="elementor-icon-list-item elementor-inline-item">
-														<a href="../contact/index.php">
+														<a href="../contact">
 			
 														<span class="elementor-icon-list-text">Contact</span>
 														</a>
@@ -819,13 +830,13 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 						<style>/*! elementor - v3.18.0 - 20-12-2023 */
 			.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container{line-height:1;font-size:0}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center)}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);line-height:var(--icon-size,25px);width:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));height:calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em))}.elementor-social-icon{--e-social-icon-icon-color:#fff;display:inline-flex;background-color:#69727d;align-items:center;justify-content:center;text-align:center;cursor:pointer}.elementor-social-icon i{color:var(--e-social-icon-icon-color)}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color)}.elementor-social-icon:last-child{margin:0}.elementor-social-icon:hover{opacity:.9;color:#fff}.elementor-social-icon-android{background-color:#a4c639}.elementor-social-icon-apple{background-color:#999}.elementor-social-icon-behance{background-color:#1769ff}.elementor-social-icon-bitbucket{background-color:#205081}.elementor-social-icon-codepen{background-color:#000}.elementor-social-icon-delicious{background-color:#39f}.elementor-social-icon-deviantart{background-color:#05cc47}.elementor-social-icon-digg{background-color:#005be2}.elementor-social-icon-dribbble{background-color:#ea4c89}.elementor-social-icon-elementor{background-color:#d30c5c}.elementor-social-icon-envelope{background-color:#ea4335}.elementor-social-icon-facebook,.elementor-social-icon-facebook-f{background-color:#3b5998}.elementor-social-icon-flickr{background-color:#0063dc}.elementor-social-icon-foursquare{background-color:#2d5be3}.elementor-social-icon-free-code-camp,.elementor-social-icon-freecodecamp{background-color:#006400}.elementor-social-icon-github{background-color:#333}.elementor-social-icon-gitlab{background-color:#e24329}.elementor-social-icon-globe{background-color:#69727d}.elementor-social-icon-google-plus,.elementor-social-icon-google-plus-g{background-color:#dd4b39}.elementor-social-icon-houzz{background-color:#7ac142}.elementor-social-icon-instagram{background-color:#262626}.elementor-social-icon-jsfiddle{background-color:#487aa2}.elementor-social-icon-link{background-color:#818a91}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5}.elementor-social-icon-medium{background-color:#00ab6b}.elementor-social-icon-meetup{background-color:#ec1c40}.elementor-social-icon-mixcloud{background-color:#273a4b}.elementor-social-icon-odnoklassniki{background-color:#f4731c}.elementor-social-icon-pinterest{background-color:#bd081c}.elementor-social-icon-product-hunt{background-color:#da552f}.elementor-social-icon-reddit{background-color:#ff4500}.elementor-social-icon-rss{background-color:#f26522}.elementor-social-icon-shopping-cart{background-color:#4caf50}.elementor-social-icon-skype{background-color:#00aff0}.elementor-social-icon-slideshare{background-color:#0077b5}.elementor-social-icon-snapchat{background-color:#fffc00}.elementor-social-icon-soundcloud{background-color:#f80}.elementor-social-icon-spotify{background-color:#2ebd59}.elementor-social-icon-stack-overflow{background-color:#fe7a15}.elementor-social-icon-steam{background-color:#00adee}.elementor-social-icon-stumbleupon{background-color:#eb4924}.elementor-social-icon-telegram{background-color:#2ca5e0}.elementor-social-icon-thumb-tack{background-color:#1aa1d8}.elementor-social-icon-tripadvisor{background-color:#589442}.elementor-social-icon-tumblr{background-color:#35465c}.elementor-social-icon-twitch{background-color:#6441a5}.elementor-social-icon-twitter{background-color:#1da1f2}.elementor-social-icon-viber{background-color:#665cac}.elementor-social-icon-vimeo{background-color:#1ab7ea}.elementor-social-icon-vk{background-color:#45668e}.elementor-social-icon-weibo{background-color:#dd2430}.elementor-social-icon-weixin{background-color:#31a918}.elementor-social-icon-whatsapp{background-color:#25d366}.elementor-social-icon-wordpress{background-color:#21759b}.elementor-social-icon-xing{background-color:#026466}.elementor-social-icon-yelp{background-color:#af0606}.elementor-social-icon-youtube{background-color:#cd201f}.elementor-social-icon-500px{background-color:#0099e5}.elementor-shape-rounded .elementor-icon.elementor-social-icon{border-radius:10%}.elementor-shape-circle .elementor-icon.elementor-social-icon{border-radius:50%}</style>		<div class="elementor-social-icons-wrapper elementor-grid">
 										<span class="elementor-grid-item">
-								<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-b2ac4d5" href="#" target="_blank">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-b2ac4d5" href="https://www.facebook.com/twochapterstudios" target="_blank">
 									<span class="elementor-screen-only">Facebook</span>
 									<svg class="e-font-icon-svg e-fab-facebook" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>					</a>
 							</span>
 										<span class="elementor-grid-item">
-								<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-532d8db" href="#" target="_blank">
-									<span class="elementor-screen-only">Twitter</span>
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-532d8db" href="https://x.com/2chapterstudio" target="_blank">
+									<span class="elementor-screen-only">X</span>
 									<svg version="1.1" id="svg5" xmlns:svg="http://www.w3.org/2000/svg" style="font-size: 25px"
 							xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1668.56 1221.19"
 							style="enable-background:new 0 0 1668.56 1221.19;" xml:space="preserve">
@@ -844,11 +855,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 						</svg>					</a>
 							</span>
 										<span class="elementor-grid-item">
-								<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d08cb86" href="#" target="_blank">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-d08cb86" href="https://www.youtube.com/@twochapterstudios" target="_blank">
 									<span class="elementor-screen-only">Youtube</span>
 									<svg class="e-font-icon-svg e-fab-youtube" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>					</a>
 							</span>
-								</div>
+							<span class="elementor-grid-item">
+							<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-c837a4b" href="https://www.instagram.com/twochapterstudios" target="_blank">
+								<span class="elementor-screen-only">Instagram</span>
+								<svg class="e-font-icon-svg e-fab-instagram" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
+					   	</span>
+							</div>
 							</div>
 							</div>
 							</div>
@@ -875,7 +891,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 										<li class="elementor-icon-list-item">
 														<span class="elementor-icon-list-icon">
 										<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>						</span>
-													<span class="elementor-icon-list-text">@Two Chapters Studios</span>
+													<span class="elementor-icon-list-text">@Two Chapter Studios</span>
 												</li>
 									</ul>
 							</div>
@@ -919,15 +935,15 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-widget-container">
 								<ul class="elementor-icon-list-items elementor-inline-items">
 										<li class="elementor-icon-list-item elementor-inline-item">
-														<a href="#">
+														<a href="../our-services">
 			
 															<span class="elementor-icon-list-icon">
 										<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-pin" viewbox="0 0 288 512" xmlns="http://www.w3.org/2000/svg"><path d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"></path></svg>						</span>
-													<span class="elementor-icon-list-text">Direction</span>
+													<span class="elementor-icon-list-text">Services</span>
 														</a>
 												</li>
 											<li class="elementor-icon-list-item elementor-inline-item">
-														<a href="../contact/index.php">
+														<a href="../contact">
 			
 															<span class="elementor-icon-list-icon">
 										<svg aria-hidden="true" class="e-font-icon-svg e-fas-comments" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path></svg>						</span>
@@ -949,22 +965,22 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 							<div class="elementor-widget-container">
 								<div class="elementor-social-icons-wrapper elementor-grid">
 										<span class="elementor-grid-item">
-								<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-grow elementor-repeater-item-d497524" target="_blank">
-									<span class="elementor-screen-only">Facebook-f</span>
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-grow elementor-repeater-item-d497524" href="https://www.facebook.com/twochapterstudios" target="_blank">
+									<span class="elementor-screen-only">Facebook</span>
 									<svg class="e-font-icon-svg e-fab-facebook-f" viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>					</a>
 							</span>
 										<span class="elementor-grid-item">
-								<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-grow elementor-repeater-item-c5bc324" target="_blank">
-									<span class="elementor-screen-only">Twitter</span>
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-grow elementor-repeater-item-c5bc324" href="https://x.com/2chapterstudio" target="_blank">
+									<span class="elementor-screen-only">X</span>
 									<svg class="e-font-icon-svg e-fab-twitter" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>					</a>
 							</span>
 										<span class="elementor-grid-item">
-								<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-grow elementor-repeater-item-c837a4b" target="_blank">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-animation-grow elementor-repeater-item-c837a4b" href="https://www.instagram.com/twochapterstudios" target="_blank">
 									<span class="elementor-screen-only">Instagram</span>
 									<svg class="e-font-icon-svg e-fab-instagram" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>					</a>
 							</span>
 										<span class="elementor-grid-item">
-								<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-grow elementor-repeater-item-dcedee2" target="_blank">
+								<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-grow elementor-repeater-item-dcedee2" href="https://www.youtube.com/@twochapterstudios" target="_blank">
 									<span class="elementor-screen-only">Youtube</span>
 									<svg class="e-font-icon-svg e-fab-youtube" viewbox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>					</a>
 							</span>
