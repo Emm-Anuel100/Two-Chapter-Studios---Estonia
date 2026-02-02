@@ -20,11 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['name'])) {
         //Server settings
         $mail->SMTPDebug = 0;  // Set to 0 to disable debug output
         $mail->isSMTP(); 
-        $mail->Host = 'mail.mediatrakltd.com';  // Specify main and backup SMTP servers
+        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;          // Enable SMTP authentication
-        $mail->Username = 'twochapterstudio@mediatrakltd.com'; // SMTP username
-        $mail->Password =  'Emmanuel2003@';  // SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   // Enable TLS encryption, `PHPMailer::ENCRYPTION_SMTPS` for SSL
+        $mail->Username = 'info@twochapterstudios.com'; // SMTP username
+        $mail->Password =  'Twochapters1992';  // SMTP password
+         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   // Enable TLS encryption, PHPMailer::ENCRYPTION_SMTPS for SSL
         $mail->Port = 587;               // TCP port to connect to
 		//   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SMTPS (SSL/TLS) for port 465
 		//   $mail->Port       = 465; 
